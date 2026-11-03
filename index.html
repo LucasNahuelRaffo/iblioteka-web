@@ -1,0 +1,1075 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iblioteka — IRIZAR KON</title>
+<meta name="description" content="iblioteka: estantería modular de diseño por IRIZAR KON. Dos módulos, cuatro formatos, una pieza entre lo funcional y lo escultórico.">
+<meta property="og:title" content="iblioteka — IRIZAR KON">
+<meta property="og:description" content="Estantería modular de diseño. Dos módulos, cuatro formatos.">
+<meta property="og:image" content="assets/C1-cuadruple.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3F2EE}
+a{color:#161615}a:hover{color:#8A6440}
+*{box-sizing:border-box}
+.nl{text-decoration:none;font-size:14px;font-weight:500;color:#161615;padding:12px 4px}
+.nl:hover{color:#8A6440}
+.btn{transition:transform .25s ease, background-color .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.card-img{transition:transform .6s ease}
+.card:hover .card-img{transform:scale(1.05)}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+details[open] .pl{transform:rotate(45deg)}
+.pl{transition:transform .3s ease}
+.fwm{filter:blur(5px);-webkit-mask-image:linear-gradient(to bottom,#000 10%,rgba(0,0,0,.35) 75%,transparent 100%);mask-image:linear-gradient(to bottom,#000 10%,rgba(0,0,0,.35) 75%,transparent 100%)}
+.fl{color:#F3F2EE;text-decoration:none}
+.fl:hover{color:#D8C6AA}
+.fb{transition:background-color .25s ease,transform .25s ease}
+.fb:hover{background-color:#161615;transform:translateY(-2px)}
+:root{--ease:cubic-bezier(.16,1,.3,1)}
+html{scroll-behavior:smooth}
+@keyframes hw{to{transform:translateY(-70px)}}
+@keyframes up{from{opacity:0;transform:translate3d(0,32px,0)}to{opacity:1;transform:none}}
+@keyframes chUp{from{opacity:0;transform:translate3d(0,55%,0) rotate(5deg)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.84) rotate(-8deg)}to{opacity:1;transform:none}}
+@keyframes down{from{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}
+@keyframes marquee{to{transform:translate3d(-50%,0,0)}}
+@keyframes float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-12px,0)}}
+@keyframes breathe{from{transform:scale(1)}to{transform:scale(1.07)}}
+@keyframes ring{0%{transform:scale(1);opacity:.5}100%{transform:scale(1.75);opacity:0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes fadeUp{from{opacity:0;transform:translate3d(0,10px,0)}to{opacity:1;transform:none}}
+.btn{position:relative;isolation:isolate;transition:transform .5s var(--ease),box-shadow .5s var(--ease),background-color .3s ease,color .3s ease}
+.btn:hover{transform:translate3d(0,-3px,0);box-shadow:0 16px 32px -14px rgba(22,22,21,.5)}
+.btn:active{transform:scale(.96);transition-duration:.12s}
+.btn:not([aria-label="Escribir por WhatsApp"]){overflow:hidden}
+.btn:not([aria-label="Escribir por WhatsApp"])::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.32) 50%,transparent 70%);transform:translate3d(-120%,0,0);transition:transform .9s var(--ease);pointer-events:none}
+.btn:hover::after{transform:translate3d(120%,0,0)}
+.nl{position:relative;transition:color .3s ease}
+.nl::after{content:"";position:absolute;left:4px;right:4px;bottom:7px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .55s var(--ease)}
+.nl:hover::after{transform:scaleX(1);transform-origin:left}
+.fl{position:relative;transition:color .3s ease}
+.fl:hover{transform:translate3d(6px,0,0)}
+.fl{display:inline-block;transition:color .3s ease,transform .45s var(--ease)}
+.fb{transition:background-color .3s ease,transform .45s var(--ease),border-color .3s ease}
+.fb:hover{transform:translate3d(0,-3px,0);border-color:#D8C6AA}
+.card{transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
+.card:hover{transform:translate3d(0,-6px,0) rotate(-1deg)}
+.card-img{transition:transform 1.2s var(--ease)}
+.card:hover .card-img{transform:scale(1.08)}
+summary{transition:color .3s ease}
+summary:hover{color:#8A6440}
+.pl{transition:transform .55s var(--ease)}
+:root{interpolate-size:allow-keywords}
+details::details-content{block-size:0;overflow:hidden;transition:block-size .6s var(--ease),content-visibility .6s allow-discrete}
+details[open]::details-content{block-size:auto}
+details p{transition:opacity .45s ease .08s,transform .6s var(--ease) .04s}
+details:not([open]) p{opacity:0;transform:translate3d(0,-8px,0)}
+summary{transition:color .3s ease,transform .5s var(--ease)}
+summary:hover{transform:translate3d(6px,0,0)}
+.cnt{font-variant-numeric:tabular-nums}
+.ig{width:100%;height:84px;display:block;overflow:visible}
+.ig *{transform-box:fill-box;transform-origin:center}
+.bar{transform-origin:50% 100%}
+.grow{transform-origin:0 50%}
+@media (prefers-reduced-motion: no-preference){
+.mA{animation:mA 6s var(--ease) infinite}.mB{animation:mB 6s var(--ease) infinite}
+@keyframes mA{0%,12%{transform:translate3d(-14px,0,0)}40%,78%{transform:none}100%{transform:translate3d(-14px,0,0)}}
+@keyframes mB{0%,12%{transform:translate3d(14px,0,0)}40%,78%{transform:none}100%{transform:translate3d(14px,0,0)}}
+.dr{stroke-dasharray:1;animation:dr 6s var(--ease) infinite}
+@keyframes dr{0%,15%{stroke-dashoffset:1}45%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.q{animation-duration:7s;animation-timing-function:var(--ease);animation-iteration-count:infinite}
+.q1{animation-name:q1}.q2{animation-name:q2;animation-delay:.1s}.q3{animation-name:q3;animation-delay:.2s}.q4{animation-name:q4;animation-delay:.3s}
+@keyframes q1{0%,10%{transform:translate3d(-30px,-8px,0) rotate(-12deg);opacity:.3}42%,80%{transform:none;opacity:1}100%{transform:translate3d(-30px,-8px,0) rotate(-12deg);opacity:.3}}
+@keyframes q2{0%,10%{transform:translate3d(30px,-8px,0) rotate(12deg);opacity:.3}42%,80%{transform:none;opacity:1}100%{transform:translate3d(30px,-8px,0) rotate(12deg);opacity:.3}}
+@keyframes q3{0%,10%{transform:translate3d(-30px,8px,0) rotate(12deg);opacity:.3}42%,80%{transform:none;opacity:1}100%{transform:translate3d(-30px,8px,0) rotate(12deg);opacity:.3}}
+@keyframes q4{0%,10%{transform:translate3d(30px,8px,0) rotate(-12deg);opacity:.3}42%,80%{transform:none;opacity:1}100%{transform:translate3d(30px,8px,0) rotate(-12deg);opacity:.3}}
+.lift{animation:lift 6s var(--ease) infinite}
+@keyframes lift{0%,12%{transform:translate3d(0,28px,0)}45%,80%{transform:none}100%{transform:translate3d(0,28px,0)}}
+.bar{animation:bar 6s var(--ease) infinite}
+@keyframes bar{0%,12%{transform:scaleY(0)}45%,80%{transform:none}100%{transform:scaleY(0)}}
+.fadeT{animation:fadeT 6s ease infinite}
+@keyframes fadeT{0%,38%{opacity:0}52%,80%{opacity:1}94%,100%{opacity:0}}
+.lyT{animation:lyT 5s var(--ease) infinite}.lyB{animation:lyB 5s var(--ease) infinite}
+@keyframes lyT{0%,15%,85%,100%{transform:none}40%,65%{transform:translate3d(0,-12px,0)}}
+@keyframes lyB{0%,15%,85%,100%{transform:none}40%,65%{transform:translate3d(0,12px,0)}}
+.slab{animation:woods 9s ease-in-out infinite,bob 3s ease-in-out infinite}
+@keyframes woods{0%,28%{fill:#D5C1AA}33%,61%{fill:#A8774E}66%,94%{fill:#DEC69E}100%{fill:#D5C1AA}}
+@keyframes bob{0%,100%{transform:translate3d(0,-4px,0)}50%{transform:none}}
+.dot{animation:dot 9s var(--ease) infinite}.dot2{animation-delay:-6s}.dot3{animation-delay:-3s}
+@keyframes dot{0%,28%{transform:scale(1.5)}33%,100%{transform:none}}
+.grow{animation:grow 6s var(--ease) infinite}
+@keyframes grow{0%,15%{transform:scaleX(.33)}45%,80%{transform:none}100%{transform:scaleX(.33)}}
+}
+#configurador button{transition:transform .4s var(--ease),background-color .3s ease,border-color .3s ease,box-shadow .4s var(--ease),color .3s ease}
+#configurador button:hover:not(:disabled){transform:translate3d(0,-2px,0)}
+#configurador button:active:not(:disabled){transform:scale(.95);transition-duration:.1s}
+#configurador div:has(svg){transition:background-color .6s var(--ease)}
+#configurador svg rect{transition:fill .6s var(--ease),opacity .6s var(--ease),x .7s var(--ease),y .7s var(--ease),width .7s var(--ease)}
+.orb{position:relative}
+.orb::after{content:"";position:absolute;inset:-18px;border-radius:50%;border:1.5px dashed #D8C6AA;pointer-events:none}
+[aria-label="Escribir por WhatsApp"]::before{content:"";position:absolute;inset:0;border-radius:50%;background:#161615;z-index:-1;pointer-events:none}
+@media (prefers-reduced-motion: no-preference){
+.hdr{animation:down .9s var(--ease) both}
+.ch{display:inline-block;animation:chUp 1.15s var(--ease) both;will-change:transform}
+.c0{animation-delay:.05s}.c1{animation-delay:.1s}.c2{animation-delay:.15s}.c3{animation-delay:.2s}.c4{animation-delay:.25s}.c5{animation-delay:.3s}.c6{animation-delay:.35s}.c7{animation-delay:.4s}.c8{animation-delay:.45s}
+.hin{animation:up 1s var(--ease) both}
+.d1{animation-delay:.45s}.d2{animation-delay:.6s}.d3{animation-delay:.75s}
+.hpop{animation:pop 1.4s var(--ease) .25s both,float 7s ease-in-out 1.7s infinite}
+.mq-t{animation:marquee 38s linear infinite;will-change:transform}
+.bnd{animation:breathe 14s ease-in-out infinite alternate;transform-origin:center}
+.orb{animation:float 6s ease-in-out infinite}
+.orb::after{animation:spin 40s linear infinite}
+[aria-label="Escribir por WhatsApp"]{animation:pop .9s var(--ease) 1.2s both}
+[aria-label="Escribir por WhatsApp"]::before{animation:ring 2.6s var(--ease) 2s infinite}
+.rv-ready .rv{opacity:0;transform:translate3d(0,44px,0);transition:opacity 1s var(--ease),transform 1.15s var(--ease)}
+.rv-ready .rv.in{opacity:1;transform:none}
+.rv-ready .rv:nth-child(2){transition-delay:.08s}.rv-ready .rv:nth-child(3){transition-delay:.16s}.rv-ready .rv:nth-child(4){transition-delay:.24s}.rv-ready .rv:nth-child(5){transition-delay:.32s}.rv-ready .rv:nth-child(6){transition-delay:.4s}
+.rv-ready .rv h2,.rv-ready .rv h3{transform:translate3d(0,26px,0);transition:transform 1.2s var(--ease) .12s}
+.rv-ready .rv.in h2,.rv-ready .rv.in h3{transform:none}
+.rv-ready .rv img{transform:scale(1.08);transition:transform 1.8s var(--ease)}
+.rv-ready .rv.in img{transform:none}
+.rv.in img:hover{transform:scale(1.035)}
+@supports (animation-timeline: scroll()){
+.hw{animation:hw linear both;animation-timeline:scroll();animation-range:0 700px}
+}
+}
+</style>
+</head>
+<body>
+<div id="app">
+<div style="font-family: 'Manrope', system-ui, sans-serif; color: #161615; background: #F3F2EE; width: 100%; overflow-x: hidden">
+
+<!-- NAV -->
+<header class="hdr" style="position: sticky; top: 0; z-index: 20; background: rgba(243,242,238,0.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(22,22,21,0.08)">
+<nav aria-label="Principal" style="max-width: 1320px; margin: 0 auto; padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+<a href="#inicio" style="text-decoration: none; color: #161615; font-weight: 800; font-size: 17px; line-height: 0.9; letter-spacing: -0.01em">IRIZAR<br>KON</a>
+<div style="display: flex; gap: 28px; flex-wrap: wrap; align-items: center">
+<a class="nl" href="#concepto">Concepto</a>
+<a class="nl" href="#ambientes">Ambientes</a>
+<a class="nl" href="#configurador">Configurador</a>
+<a class="nl" href="#detalles">Detalles</a>
+<a class="nl" href="#showroom">Showroom</a>
+<a class="nl" href="#preguntas">Preguntas</a>
+</div>
+<a class="btn" data-t-href="{{waGeneral}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #161615; color: #F3F2EE; text-decoration: none; font-weight: 600; font-size: 14px; padding: 13px 22px; border-radius: 999px; min-height: 44px">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8.6 8.6 0 0 1-12.7 7.6L3.5 20.5l1.4-4.1a8.6 8.6 0 1 1 15.6-4.8z"></path><path d="M9 9.2c.3 1.9 2 3.9 4.3 4.6l1-1.1 1.8.8-.4 1.6c-3.4.2-7-3.3-7-6.7l1.6-.4.8 1.8z"></path></svg>
+WhatsApp</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="inicio" style="position: relative; padding: 28px 0 88px; overflow: hidden">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px">
+<h1 class="hw" style="margin: 0; font-size: clamp(84px, 19.5vw, 300px); font-weight: 800; letter-spacing: -0.07em; line-height: 0.86; text-align: center; color: #161615"><span class="ch c0">i</span><span class="ch c1">b</span><span class="ch c2">l</span><span class="ch c3">i</span><span class="ch c4">o</span><span class="ch c5">t</span><span class="ch c6">e</span><span class="ch c7">k</span><span class="ch c8">a</span></h1>
+<p class="hin d1" style="margin: 6px 0 0; text-align: right; font-size: clamp(15px, 1.6vw, 22px); font-weight: 500; letter-spacing: -0.01em">estantería modular <span style="color: #8A6440">por IRIZAR KON</span></p>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 40px; margin-top: 8px">
+<div class="hin d2" style="flex: 1 1 260px; max-width: 320px; display: flex; flex-direction: column; gap: 28px; padding-bottom: 12px">
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4F4C47">Una estructura que organiza libros y objetos mientras redefine el espacio que habita. Dos módulos, cuatro formatos, una pieza que vive entre lo funcional y lo escultórico.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap">
+<a class="btn" href="#configurador" style="display: inline-flex; align-items: center; justify-content: center; background: #161615; color: #F3F2EE; text-decoration: none; font-weight: 600; font-size: 15px; padding: 15px 28px; border-radius: 999px; min-height: 48px">Armá la tuya</a>
+<a class="btn" data-t-href="{{waGeneral}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid #161615; color: #161615; text-decoration: none; font-weight: 600; font-size: 15px; padding: 15px 24px; border-radius: 999px; min-height: 48px">Consultar</a>
+</div>
+</div>
+<div style="flex: 1 1 420px; max-width: 580px; margin-top: calc(-1 * clamp(36px, 9vw, 150px)); position: relative">
+<div class="hpop" style="position: relative; width: 100%; aspect-ratio: 1 / 1; border-radius: 50%; background: #D8C6AA">
+<svg role="img" aria-label="Animación de la iblioteka cambiando de forma entre sus formatos" viewBox="-40 -40 692 692" style="position: absolute; inset: 11%; width: 78%; height: 78%; overflow: visible">
+<g data-t-transform="{{h.m0.t}}" data-t-opacity="{{h.m0.o}}"><rect x="0" y="0" width="300" height="300" fill="none" stroke="#161615" stroke-width="7"></rect><path data-t-d="{{h.m0.l0}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m0.l1}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m0.l2}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m0.l3}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m0.l4}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m0.l5}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m0.l6}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path></g>
+<g data-t-transform="{{h.m1.t}}" data-t-opacity="{{h.m1.o}}"><rect x="0" y="0" width="300" height="300" fill="none" stroke="#161615" stroke-width="7"></rect><path data-t-d="{{h.m1.l0}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m1.l1}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m1.l2}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m1.l3}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m1.l4}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m1.l5}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m1.l6}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path></g>
+<g data-t-transform="{{h.m2.t}}" data-t-opacity="{{h.m2.o}}"><rect x="0" y="0" width="300" height="300" fill="none" stroke="#161615" stroke-width="7"></rect><path data-t-d="{{h.m2.l0}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m2.l1}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m2.l2}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m2.l3}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m2.l4}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m2.l5}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m2.l6}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path></g>
+<g data-t-transform="{{h.m3.t}}" data-t-opacity="{{h.m3.o}}"><rect x="0" y="0" width="300" height="300" fill="none" stroke="#161615" stroke-width="7"></rect><path data-t-d="{{h.m3.l0}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m3.l1}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m3.l2}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m3.l3}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m3.l4}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m3.l5}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path><path data-t-d="{{h.m3.l6}}" fill="none" stroke="#161615" stroke-width="5" stroke-linecap="round"></path></g>
+</svg>
+</div>
+<p style="position: absolute; left: -40px; bottom: 6%; margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #161615"><span class="hl">{{heroLabel}}</span></p>
+</div>
+<div class="hin d3" style="flex: 1 1 220px; max-width: 300px; display: flex; gap: 14px; padding: 14px; position: relative; border-radius: 30px; background: rgba(255, 255, 255, 0.18); border: 1px solid rgba(255, 255, 255, 0.5); box-shadow: 0 8px 32px rgba(22,22,21,0.10), inset 0 1px 0 rgba(255,255,255,0.6); backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%)">
+<a class="card" href="#configurador" style="flex: 1 1 0; background: rgba(255,255,255,0.28); color: #161615; border-radius: 22px; padding: 8px 8px 14px; text-decoration: none; display: flex; flex-direction: column; gap: 12px; overflow: hidden; backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%); border: 1px solid rgba(255,255,255,0.55); box-shadow: 0 8px 32px rgba(22,22,21,0.12), inset 0 1px 0 rgba(255,255,255,0.6)">
+<div style="border-radius: 15px; overflow: hidden; height: 128px"><img class="card-img" src="assets/C1-cuadruple.jpg" alt="iblioteka cuádruple vacía, vista de frente" style="width: 100%; height: 100%; object-fit: cover; display: block; background: #fff"></div>
+<span style="font-size: 14px; font-weight: 600; padding: 0 6px; color: #161615">Formatos →</span>
+</a>
+<a class="card" href="#showroom" style="flex: 1 1 0; background: rgba(255,255,255,0.28); color: #161615; border-radius: 22px; padding: 8px 8px 14px; text-decoration: none; display: flex; flex-direction: column; gap: 12px; overflow: hidden; backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%); border: 1px solid rgba(255,255,255,0.55); box-shadow: 0 8px 32px rgba(22,22,21,0.12), inset 0 1px 0 rgba(255,255,255,0.6)">
+<div style="border-radius: 15px; overflow: hidden; height: 128px"><img class="card-img" src="assets/ambiente-pasillo.jpg" alt="Showroom con distintos formatos de iblioteka" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<span style="font-size: 14px; font-weight: 600; padding: 0 6px; color: #161615">Showroom →</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- MARQUESINA -->
+<div class="mq" aria-hidden="true" style="overflow: hidden; background: #161615; color: #D8C6AA; padding: 22px 0; white-space: nowrap">
+<div class="mq-t" style="display: inline-flex; align-items: center; gap: 48px; padding-right: 48px; font-size: clamp(22px, 2.6vw, 38px); font-weight: 800; letter-spacing: -0.03em; line-height: 1" style-hover="animation-direction: reverse">
+<span>iblioteka</span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #D8C6AA"></span><span style="color: #F3F2EE">Funcional</span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #D8C6AA"></span><span>Escultórica</span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #D8C6AA"></span><span style="color: #F3F2EE">Modular</span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #D8C6AA"></span><span>Dos módulos, cuatro formatos</span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #D8C6AA"></span>
+<span>iblioteka</span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #D8C6AA"></span><span style="color: #F3F2EE">Funcional</span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #D8C6AA"></span><span>Escultórica</span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #D8C6AA"></span><span style="color: #F3F2EE">Modular</span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #D8C6AA"></span><span>Dos módulos, cuatro formatos</span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #D8C6AA"></span>
+</div>
+</div>
+
+<!-- CONCEPTO -->
+<section id="concepto" style="padding: 96px 0 120px; background: #FBFBF9">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 56px">
+<div class="rv" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap">
+<h2 style="margin: 0; font-size: clamp(34px, 4.6vw, 68px); font-weight: 700; letter-spacing: -0.045em; line-height: 1.02; max-width: 980px"><span style="color: #8A6440">Hay objetos que almacenan y ordenan.</span> Y hay objetos que cambian la manera en que uno percibe el espacio.</h2>
+<span style="font-size: 18px; font-weight: 600; color: #8A6440; white-space: nowrap">01 / Concepto</span>
+</div>
+<div style="display: flex; gap: 24px; flex-wrap: wrap">
+<div class="rv" style="flex: 1.15 1 420px; border-radius: 28px; overflow: hidden; height: 640px; background: #F3F2EE; box-sizing: border-box; padding: 14px; border: 1px solid #E2DDD2; box-shadow: 0 30px 60px -28px rgba(60, 40, 20, 0.35), 0 8px 18px -10px rgba(60, 40, 20, 0.18); transition: transform 0.4s ease, box-shadow 0.4s ease" style-hover="transform: translateY(-4px); box-shadow: 0 40px 70px -28px rgba(60, 40, 20, 0.42), 0 10px 22px -10px rgba(60, 40, 20, 0.2)"><img src="assets/concepto-living.jpg" alt="iblioteka cuádruple en un living luminoso, entre dos sillones de bouclé y una mesa de travertino" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block; border-radius: 18px"></div>
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 32px">
+<div class="rv" style="border-radius: 28px; overflow: hidden; height: 400px; background: #F3F2EE; box-sizing: border-box; padding: 14px; border: 1px solid #E2DDD2; box-shadow: 0 30px 60px -28px rgba(60, 40, 20, 0.35), 0 8px 18px -10px rgba(60, 40, 20, 0.18); transition: transform 0.4s ease, box-shadow 0.4s ease" style-hover="transform: translateY(-4px); box-shadow: 0 40px 70px -28px rgba(60, 40, 20, 0.42), 0 10px 22px -10px rgba(60, 40, 20, 0.2)"><img src="assets/concepto-estudio.jpg" alt="iblioteka doble superior sobre un escritorio de roble, junto a una ventana" style="width: 100%; height: 100%; object-fit: cover; object-position: center 18%; display: block; border-radius: 18px"></div>
+<div class="rv" style="display: flex; flex-direction: column; gap: 18px; max-width: 520px">
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #34322E">La <strong>iblioteka</strong> es una estructura que organiza libros y objetos mientras redefine el espacio que habita. Sus estantes y divisiones se curvan como si la pared respirara.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #34322E">Una pieza que vive en la frontera entre lo funcional y lo escultórico.</p>
+<a href="#configurador" style="font-weight: 600; font-size: 19px; color: #8A6440; text-decoration: none">Conocé los formatos →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BANDA FOLLETO -->
+<section aria-label="iblioteka" style="position: relative; height: 520px; overflow: hidden; background: #141413; filter: none; opacity: 1">
+<svg aria-hidden="true" class="bnd" viewBox="0 0 1664 520" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; filter: none; opacity: 1; backdrop-filter: none; -webkit-backdrop-filter: none" shape-rendering="crispEdges">
+<rect x="0" y="0" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M0 104A52.0 52.0 0 0 1 104 104Z" fill="#141413"></path>
+<rect x="104" y="0" width="104" height="104" fill="#141413"></rect>
+<path d="M104 0A52.0 52.0 0 0 0 208 0Z" fill="#D8C6AA"></path>
+<rect x="208" y="0" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M208 0A52.0 52.0 0 0 1 208 104Z" fill="#141413"></path>
+<rect x="312" y="0" width="104" height="104" fill="#141413"></rect>
+<path d="M416 0A52.0 52.0 0 0 0 416 104Z" fill="#D8C6AA"></path>
+<rect x="416" y="0" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M416 104A52.0 52.0 0 0 1 520 104Z" fill="#141413"></path>
+<rect x="520" y="0" width="104" height="104" fill="#141413"></rect>
+<path d="M520 0A52.0 52.0 0 0 0 624 0Z" fill="#D8C6AA"></path>
+<rect x="624" y="0" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M624 0A52.0 52.0 0 0 1 624 104Z" fill="#141413"></path>
+<rect x="728" y="0" width="104" height="104" fill="#141413"></rect>
+<path d="M832 0A52.0 52.0 0 0 0 832 104Z" fill="#D8C6AA"></path>
+<rect x="832" y="0" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M832 104A52.0 52.0 0 0 1 936 104Z" fill="#141413"></path>
+<rect x="936" y="0" width="104" height="104" fill="#141413"></rect>
+<path d="M936 0A52.0 52.0 0 0 0 1040 0Z" fill="#D8C6AA"></path>
+<rect x="1040" y="0" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1040 0A52.0 52.0 0 0 1 1040 104Z" fill="#141413"></path>
+<rect x="1144" y="0" width="104" height="104" fill="#141413"></rect>
+<path d="M1248 0A52.0 52.0 0 0 0 1248 104Z" fill="#D8C6AA"></path>
+<rect x="1248" y="0" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1248 104A52.0 52.0 0 0 1 1352 104Z" fill="#141413"></path>
+<rect x="1352" y="0" width="104" height="104" fill="#141413"></rect>
+<path d="M1352 0A52.0 52.0 0 0 0 1456 0Z" fill="#D8C6AA"></path>
+<rect x="1456" y="0" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1456 0A52.0 52.0 0 0 1 1456 104Z" fill="#141413"></path>
+<rect x="1560" y="0" width="104" height="104" fill="#141413"></rect>
+<path d="M1664 0A52.0 52.0 0 0 0 1664 104Z" fill="#D8C6AA"></path>
+<rect x="0" y="104" width="104" height="104" fill="#141413"></rect>
+<path d="M104 104A52.0 52.0 0 0 0 104 208Z" fill="#D8C6AA"></path>
+<rect x="104" y="104" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M104 104A52.0 52.0 0 0 0 208 104Z" fill="#141413"></path>
+<rect x="208" y="104" width="104" height="104" fill="#141413"></rect>
+<path d="M312 104A52.0 52.0 0 0 0 312 208Z" fill="#D8C6AA"></path>
+<rect x="312" y="104" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M312 104A52.0 52.0 0 0 1 312 208Z" fill="#141413"></path>
+<rect x="416" y="104" width="104" height="104" fill="#141413"></rect>
+<path d="M416 208A52.0 52.0 0 0 1 520 208Z" fill="#D8C6AA"></path>
+<rect x="520" y="104" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M520 104A52.0 52.0 0 0 1 520 208Z" fill="#141413"></path>
+<rect x="624" y="104" width="104" height="104" fill="#141413"></rect>
+<path d="M624 104A52.0 52.0 0 0 0 728 104Z" fill="#D8C6AA"></path>
+<rect x="728" y="104" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M832 104A52.0 52.0 0 0 0 832 208Z" fill="#141413"></path>
+<rect x="832" y="104" width="104" height="104" fill="#141413"></rect>
+<path d="M832 104A52.0 52.0 0 0 0 936 104Z" fill="#D8C6AA"></path>
+<rect x="936" y="104" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M936 208A52.0 52.0 0 0 1 1040 208Z" fill="#141413"></path>
+<rect x="1040" y="104" width="104" height="104" fill="#141413"></rect>
+<path d="M1040 104A52.0 52.0 0 0 1 1040 208Z" fill="#D8C6AA"></path>
+<rect x="1144" y="104" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1144 208A52.0 52.0 0 0 1 1248 208Z" fill="#141413"></path>
+<rect x="1248" y="104" width="104" height="104" fill="#141413"></rect>
+<path d="M1352 104A52.0 52.0 0 0 0 1352 208Z" fill="#D8C6AA"></path>
+<rect x="1352" y="104" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1352 104A52.0 52.0 0 0 0 1456 104Z" fill="#141413"></path>
+<rect x="1456" y="104" width="104" height="104" fill="#141413"></rect>
+<path d="M1560 104A52.0 52.0 0 0 0 1560 208Z" fill="#D8C6AA"></path>
+<rect x="1560" y="104" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1560 104A52.0 52.0 0 0 1 1560 208Z" fill="#141413"></path>
+<rect x="0" y="208" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M0 208A52.0 52.0 0 0 1 0 312Z" fill="#141413"></path>
+<rect x="104" y="208" width="104" height="104" fill="#141413"></rect>
+<path d="M104 208A52.0 52.0 0 0 0 208 208Z" fill="#D8C6AA"></path>
+<rect x="208" y="208" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M208 208A52.0 52.0 0 0 0 312 208Z" fill="#141413"></path>
+<rect x="312" y="208" width="104" height="104" fill="#141413"></rect>
+<path d="M312 208A52.0 52.0 0 0 0 416 208Z" fill="#D8C6AA"></path>
+<rect x="416" y="208" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M416 312A52.0 52.0 0 0 1 520 312Z" fill="#141413"></path>
+<rect x="520" y="208" width="104" height="104" fill="#141413"></rect>
+<path d="M520 312A52.0 52.0 0 0 1 624 312Z" fill="#D8C6AA"></path>
+<rect x="624" y="208" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M624 312A52.0 52.0 0 0 1 728 312Z" fill="#141413"></path>
+<rect x="728" y="208" width="104" height="104" fill="#141413"></rect>
+<path d="M832 208A52.0 52.0 0 0 0 832 312Z" fill="#D8C6AA"></path>
+<rect x="832" y="208" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M936 208A52.0 52.0 0 0 0 936 312Z" fill="#141413"></path>
+<rect x="936" y="208" width="104" height="104" fill="#141413"></rect>
+<path d="M1040 208A52.0 52.0 0 0 0 1040 312Z" fill="#D8C6AA"></path>
+<rect x="1040" y="208" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1040 208A52.0 52.0 0 0 1 1040 312Z" fill="#141413"></path>
+<rect x="1144" y="208" width="104" height="104" fill="#141413"></rect>
+<path d="M1144 208A52.0 52.0 0 0 1 1144 312Z" fill="#D8C6AA"></path>
+<rect x="1248" y="208" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1248 208A52.0 52.0 0 0 1 1248 312Z" fill="#141413"></path>
+<rect x="1352" y="208" width="104" height="104" fill="#141413"></rect>
+<path d="M1352 208A52.0 52.0 0 0 0 1456 208Z" fill="#D8C6AA"></path>
+<rect x="1456" y="208" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1456 208A52.0 52.0 0 0 0 1560 208Z" fill="#141413"></path>
+<rect x="1560" y="208" width="104" height="104" fill="#141413"></rect>
+<path d="M1560 208A52.0 52.0 0 0 0 1664 208Z" fill="#D8C6AA"></path>
+<rect x="0" y="312" width="104" height="104" fill="#141413"></rect>
+<path d="M0 312A52.0 52.0 0 0 0 104 312Z" fill="#D8C6AA"></path>
+<rect x="104" y="312" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M104 312A52.0 52.0 0 0 1 104 416Z" fill="#141413"></path>
+<rect x="208" y="312" width="104" height="104" fill="#141413"></rect>
+<path d="M312 312A52.0 52.0 0 0 0 312 416Z" fill="#D8C6AA"></path>
+<rect x="312" y="312" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M312 416A52.0 52.0 0 0 1 416 416Z" fill="#141413"></path>
+<rect x="416" y="312" width="104" height="104" fill="#141413"></rect>
+<path d="M416 312A52.0 52.0 0 0 0 520 312Z" fill="#D8C6AA"></path>
+<rect x="520" y="312" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M520 312A52.0 52.0 0 0 1 520 416Z" fill="#141413"></path>
+<rect x="624" y="312" width="104" height="104" fill="#141413"></rect>
+<path d="M728 312A52.0 52.0 0 0 0 728 416Z" fill="#D8C6AA"></path>
+<rect x="728" y="312" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M728 416A52.0 52.0 0 0 1 832 416Z" fill="#141413"></path>
+<rect x="832" y="312" width="104" height="104" fill="#141413"></rect>
+<path d="M832 312A52.0 52.0 0 0 0 936 312Z" fill="#D8C6AA"></path>
+<rect x="936" y="312" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M936 312A52.0 52.0 0 0 1 936 416Z" fill="#141413"></path>
+<rect x="1040" y="312" width="104" height="104" fill="#141413"></rect>
+<path d="M1144 312A52.0 52.0 0 0 0 1144 416Z" fill="#D8C6AA"></path>
+<rect x="1144" y="312" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1144 416A52.0 52.0 0 0 1 1248 416Z" fill="#141413"></path>
+<rect x="1248" y="312" width="104" height="104" fill="#141413"></rect>
+<path d="M1248 312A52.0 52.0 0 0 0 1352 312Z" fill="#D8C6AA"></path>
+<rect x="1352" y="312" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1352 312A52.0 52.0 0 0 1 1352 416Z" fill="#141413"></path>
+<rect x="1456" y="312" width="104" height="104" fill="#141413"></rect>
+<path d="M1560 312A52.0 52.0 0 0 0 1560 416Z" fill="#D8C6AA"></path>
+<rect x="1560" y="312" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1560 416A52.0 52.0 0 0 1 1664 416Z" fill="#141413"></path>
+<rect x="0" y="416" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M0 520A52.0 52.0 0 0 1 104 520Z" fill="#141413"></path>
+<rect x="104" y="416" width="104" height="104" fill="#141413"></rect>
+<path d="M104 416A52.0 52.0 0 0 1 104 520Z" fill="#D8C6AA"></path>
+<rect x="208" y="416" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M208 520A52.0 52.0 0 0 1 312 520Z" fill="#141413"></path>
+<rect x="312" y="416" width="104" height="104" fill="#141413"></rect>
+<path d="M416 416A52.0 52.0 0 0 0 416 520Z" fill="#D8C6AA"></path>
+<rect x="416" y="416" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M416 416A52.0 52.0 0 0 0 520 416Z" fill="#141413"></path>
+<rect x="520" y="416" width="104" height="104" fill="#141413"></rect>
+<path d="M624 416A52.0 52.0 0 0 0 624 520Z" fill="#D8C6AA"></path>
+<rect x="624" y="416" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M624 416A52.0 52.0 0 0 1 624 520Z" fill="#141413"></path>
+<rect x="728" y="416" width="104" height="104" fill="#141413"></rect>
+<path d="M728 520A52.0 52.0 0 0 1 832 520Z" fill="#D8C6AA"></path>
+<rect x="832" y="416" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M832 416A52.0 52.0 0 0 1 832 520Z" fill="#141413"></path>
+<rect x="936" y="416" width="104" height="104" fill="#141413"></rect>
+<path d="M936 416A52.0 52.0 0 0 0 1040 416Z" fill="#D8C6AA"></path>
+<rect x="1040" y="416" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1144 416A52.0 52.0 0 0 0 1144 520Z" fill="#141413"></path>
+<rect x="1144" y="416" width="104" height="104" fill="#141413"></rect>
+<path d="M1144 416A52.0 52.0 0 0 0 1248 416Z" fill="#D8C6AA"></path>
+<rect x="1248" y="416" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1248 520A52.0 52.0 0 0 1 1352 520Z" fill="#141413"></path>
+<rect x="1352" y="416" width="104" height="104" fill="#141413"></rect>
+<path d="M1352 416A52.0 52.0 0 0 1 1352 520Z" fill="#D8C6AA"></path>
+<rect x="1456" y="416" width="104" height="104" fill="#D8C6AA"></rect>
+<path d="M1456 520A52.0 52.0 0 0 1 1560 520Z" fill="#141413"></path>
+<rect x="1560" y="416" width="104" height="104" fill="#141413"></rect>
+<path d="M1664 416A52.0 52.0 0 0 0 1664 520Z" fill="#D8C6AA"></path>
+<path d="M104 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M208 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M312 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M416 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M520 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M624 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M728 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M832 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M936 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M1040 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M1144 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M1248 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M1352 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M1456 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M1560 0V520" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M0 104H1664" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M0 208H1664" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M0 312H1664" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+<path d="M0 416H1664" stroke="#D8C6AA" stroke-width="1.5" opacity="0.6"></path>
+</svg>
+<div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 0px; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; margin: 0">
+<div class="orb" style="width: 400px; aspect-ratio: 1 / 1; border-radius: 50%; background: #D8C6AA; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 0 0 1.5px #D8C6AA; height: 400px; flex: 0 0 auto; margin: auto; text-align: center; box-sizing: border-box">
+<span style="font-size: clamp(48px, 7vw, 84px); font-weight: 800; letter-spacing: -0.06em; color: #141413; line-height: 1; text-align: center; display: block; margin-left: 0.06em">iblioteka</span>
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #141413; text-align: center; display: block; margin-left: 0.18em">funcional · escultórica</span>
+</div>
+</div>
+</section>
+
+<!-- AMBIENTES / DEMOSTRACION -->
+<section id="ambientes" style="padding: 120px 0">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 40px">
+<p class="rv" style="margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #5E5B55">02 / En tu espacio</p>
+<div class="rv" style="display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 8px; align-items: flex-start; flex-direction: column">
+<h2 style="margin: 0; font-size: clamp(44px, 6.4vw, 96px); font-weight: 800; letter-spacing: -0.055em; line-height: 0.95; text-wrap: balance">Funcional.</h2>
+<h2 style="margin: 0; font-size: clamp(44px, 6.4vw, 96px); font-weight: 800; letter-spacing: -0.055em; line-height: 0.95; text-align: left; text-wrap: balance"><span style="color: #8A6440">Curvas</span> que ordenan.<br>Módulos que <span style="color: #8A6440">se adaptan</span>.</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+<div class="rv" style="display: flex; gap: 20px; align-items: flex-end; flex: 1 1 280px">
+<button type="button" data-on-click="nextPhoto" aria-label="Ver la siguiente foto" style="all: unset; cursor: pointer; display: flex; gap: 18px; align-items: flex-end">
+<span style="display: block; width: 132px; height: 132px; border-radius: 16px; overflow: hidden; background: #E6E4DE"><img data-t-src="{{nextThumb}}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+<span style="display: flex; flex-direction: column; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">
+<svg aria-hidden="true" width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="#161615" stroke-width="1.6"><path d="M8 36L36 8M14 8h22v22"></path></svg>
+Siguiente foto</span>
+</button>
+</div>
+<div class="rv" style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 14px; max-width: 620px">
+<p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">¿Quién dijo que una biblioteca tiene que ser una grilla recta?</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #4F4C47">La iblioteka cambia según el lugar: sobre un escritorio, como aparador, en un rincón o como pieza central de un living. Cada módulo se separa y se combina para armar la estructura que tu espacio necesita.</p>
+</div>
+</div>
+<div class="rv" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 16px">
+<div style="position: relative; border-radius: 30px; overflow: hidden; aspect-ratio: 3 / 4; background: #E6E4DE">
+<img data-t-src="{{photo.src}}" data-t-alt="{{photo.alt}}" data-t-style="width: 100%; height: 100%; object-fit: cover; object-position: {{photo.pos}}; display: block">
+<div style="position: absolute; left: 20px; bottom: 20px; display: flex; gap: 8px; align-items: center; background: rgba(243,242,238,0.92); padding: 10px 16px; border-radius: 999px">
+<span style="font-size: 13px; font-weight: 600">{{photo.label}}</span>
+</div>
+</div>
+<div style="position: relative; border-radius: 30px; overflow: hidden; aspect-ratio: 3 / 4; background: #E6E4DE">
+<img data-t-src="{{photo2.src}}" data-t-alt="{{photo2.alt}}" data-t-style="width: 100%; height: 100%; object-fit: cover; object-position: {{photo2.pos}}; display: block">
+<div style="position: absolute; left: 20px; bottom: 20px; display: flex; gap: 8px; align-items: center; background: rgba(243,242,238,0.92); padding: 10px 16px; border-radius: 999px">
+<span style="font-size: 13px; font-weight: 600">{{photo2.label}}</span>
+<span style="font-size: 13px; color: #5E5B55">{{photoCount}}</span>
+</div>
+<div style="position: absolute; right: 20px; bottom: 20px; display: flex; gap: 8px">
+<button type="button" data-on-click="prevPhoto" aria-label="Foto anterior" class="btn" style="width: 48px; height: 48px; border-radius: 50%; border: none; background: #F3F2EE; color: #161615; font-size: 18px; cursor: pointer">←</button>
+<button type="button" data-on-click="nextPhoto" aria-label="Foto siguiente" class="btn" style="width: 48px; height: 48px; border-radius: 50%; border: none; background: #161615; color: #F3F2EE; font-size: 18px; cursor: pointer">→</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONFIGURADOR -->
+<section id="configurador" style="padding: 120px 0; background: #FFFFFF">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 48px">
+<div class="rv" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 820px">
+<p style="margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #5E5B55">03 / Configurador</p>
+<h2 style="margin: 0; font-size: clamp(36px, 4.8vw, 72px); font-weight: 800; letter-spacing: -0.05em; line-height: 1">Dos módulos. <span style="color: #8A6440">Cuatro formas</span> de habitar la pared.</h2>
+</div>
+<p style="margin: 0; max-width: 360px; font-size: 16px; line-height: 1.6; color: #4F4C47">Combiná los módulos A y B, elegí la tapa de madera y probá el color de tu pared.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 28px; align-items: stretch">
+<div class="rv" data-t-style="flex: 999 1 560px; min-width: 0; border-radius: 28px; overflow: hidden; background: {{cfg.wall}}; position: relative; align-self: flex-start">
+<svg role="img" data-t-aria-label="{{cfg.aria}}" viewBox="0 0 1500 1000" style="display: block; width: 100%; height: auto">
+<rect x="0" y="0" width="1500" height="900" data-t-fill="{{cfg.wall}}"></rect>
+<rect x="0" y="900" width="1500" height="100" data-t-fill="{{cfg.floor}}"></rect>
+<rect x="0" y="892" width="1500" height="8" data-t-fill="{{cfg.skirt}}"></rect>
+<g data-t-opacity="{{cfg.deskO}}" fill="none" data-t-stroke="{{cfg.line}}" stroke-width="4" stroke-linecap="round">
+<path data-t-d="{{cfg.desk}}"></path>
+</g>
+<g data-t-transform="{{cfg.m0.t}}" data-t-opacity="{{cfg.m0.o}}"><rect x="12" y="18" width="300" height="300" fill="#000000" opacity="0.10"></rect><rect x="0" y="0" width="300" height="300" fill="#ECEAE5" stroke="#C9C5BC" stroke-width="5"></rect><path data-t-d="{{cfg.m0.l0}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m0.l1}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m0.l2}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m0.l3}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m0.l4}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m0.l5}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m0.l6}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path></g>
+<g data-t-transform="{{cfg.m1.t}}" data-t-opacity="{{cfg.m1.o}}"><rect x="12" y="18" width="300" height="300" fill="#000000" opacity="0.10"></rect><rect x="0" y="0" width="300" height="300" fill="#ECEAE5" stroke="#C9C5BC" stroke-width="5"></rect><path data-t-d="{{cfg.m1.l0}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m1.l1}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m1.l2}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m1.l3}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m1.l4}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m1.l5}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m1.l6}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path></g>
+<g data-t-transform="{{cfg.m2.t}}" data-t-opacity="{{cfg.m2.o}}"><rect x="12" y="18" width="300" height="300" fill="#000000" opacity="0.10"></rect><rect x="0" y="0" width="300" height="300" fill="#ECEAE5" stroke="#C9C5BC" stroke-width="5"></rect><path data-t-d="{{cfg.m2.l0}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m2.l1}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m2.l2}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m2.l3}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m2.l4}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m2.l5}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m2.l6}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path></g>
+<g data-t-transform="{{cfg.m3.t}}" data-t-opacity="{{cfg.m3.o}}"><rect x="12" y="18" width="300" height="300" fill="#000000" opacity="0.10"></rect><rect x="0" y="0" width="300" height="300" fill="#ECEAE5" stroke="#C9C5BC" stroke-width="5"></rect><path data-t-d="{{cfg.m3.l0}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m3.l1}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m3.l2}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m3.l3}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m3.l4}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m3.l5}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path><path data-t-d="{{cfg.m3.l6}}" fill="none" stroke="#C4C0B7" stroke-width="8" stroke-linecap="round"></path></g>
+<rect data-t-x="{{cfg.top.x}}" data-t-y="{{cfg.top.y}}" data-t-width="{{cfg.top.w}}" height="18" rx="3" data-t-fill="{{cfg.top.fill}}" data-t-opacity="{{cfg.top.o}}"></rect>
+</svg>
+<div style="position: absolute; left: 20px; top: 20px; display: flex; gap: 8px; flex-wrap: wrap">
+<span style="background: rgba(255,255,255,0.9); color: #161615; font-size: 13px; font-weight: 600; padding: 8px 14px; border-radius: 999px">{{cfg.name}}</span>
+<span style="background: rgba(255,255,255,0.9); color: #161615; font-size: 13px; font-weight: 500; padding: 8px 14px; border-radius: 999px">{{cfg.size}}</span>
+</div>
+<span data-t-style="position: absolute; right: 20px; bottom: 16px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: {{cfg.capColor}}">Imagen ilustrativa</span>
+</div>
+<div class="rv" style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 30px; padding: 8px 0">
+<fieldset style="border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<legend style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5B55; padding: 0; margin-bottom: 12px">Formato</legend>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<sc-for data-t-list="{{formats}}" as="f" hint-placeholder-count="4">
+<sc-if data-t-value="{{f.on}}" data-t-hint-placeholder-val="{{false}}">
+<button type="button" aria-pressed="true" data-on-click="f.pick" style="text-align: left; border: 1.5px solid #161615; background: #161615; color: #F3F2EE; border-radius: 16px; padding: 14px 16px; cursor: pointer; font-family: inherit; display: flex; flex-direction: column; gap: 4px; min-height: 64px"><span style="font-size: 15px; font-weight: 700">{{f.name}}</span><span style="font-size: 13px; opacity: 0.8">{{f.comp}}</span></button>
+</sc-if>
+<sc-if data-t-value="{{f.off}}" data-t-hint-placeholder-val="{{true}}">
+<button type="button" aria-pressed="false" data-on-click="f.pick" style="text-align: left; border: 1.5px solid #D6D3CC; background: #FFFFFF; color: #161615; border-radius: 16px; padding: 14px 16px; cursor: pointer; font-family: inherit; display: flex; flex-direction: column; gap: 4px; min-height: 64px"><span style="font-size: 15px; font-weight: 700">{{f.name}}</span><span style="font-size: 13px; color: #5E5B55">{{f.comp}}</span></button>
+</sc-if>
+</sc-for>
+</div>
+</fieldset>
+<fieldset style="border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<legend style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5B55; padding: 0; margin-bottom: 12px">Tapa de madera</legend>
+<div style="display: flex; gap: 10px; flex-wrap: wrap">
+<sc-for data-t-list="{{woods}}" as="w" hint-placeholder-count="4">
+<button type="button" data-t-aria-pressed="{{w.pressed}}" data-t-disabled="{{w.dis}}" data-on-click="w.pick" data-t-style="display: inline-flex; align-items: center; gap: 10px; border: 1.5px solid {{w.border}}; background: #FFFFFF; color: #161615; border-radius: 999px; padding: 8px 16px 8px 8px; cursor: pointer; font-family: inherit; font-size: 14px; font-weight: 600; min-height: 44px; opacity: {{w.op}}"><span data-t-style="width: 26px; height: 26px; border-radius: 50%; background: {{w.color}}; border: 1px solid rgba(0,0,0,0.12)"></span>{{w.name}}</button>
+</sc-for>
+</div>
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #5E5B55">{{woodNote}}</p>
+</fieldset>
+<fieldset style="border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<legend style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5B55; padding: 0; margin-bottom: 12px">Color de pared</legend>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center">
+<sc-for data-t-list="{{walls}}" as="p" hint-placeholder-count="4">
+<button type="button" data-t-aria-label="{{p.name}}" data-t-aria-pressed="{{p.pressed}}" data-on-click="p.pick" data-t-style="width: 44px; height: 44px; border-radius: 50%; background: {{p.color}}; border: 1px solid rgba(0,0,0,0.15); box-shadow: {{p.ring}}; cursor: pointer; padding: 0"></button>
+</sc-for>
+<span style="font-size: 14px; font-weight: 600; margin-left: 4px">{{wallName}}</span>
+</div>
+</fieldset>
+<label style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 18px; border: 1.5px solid #D6D3CC; border-radius: 16px; cursor: pointer; min-height: 56px">
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 700">Separar módulos</span><span style="font-size: 13px; color: #5E5B55">Cada módulo puede ubicarse por separado</span></span>
+<input type="checkbox" data-t-checked="{{sep}}" data-on-change="toggleSep" style="width: 22px; height: 22px; accent-color: #161615">
+</label>
+<dl style="margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; padding: 22px 0; border-top: 1px solid #E2DFD8; border-bottom: 1px solid #E2DFD8">
+<div><dt style="font-size: 12px; color: #5E5B55; font-weight: 600">Composición</dt><dd style="margin: 4px 0 0; font-size: 17px; font-weight: 700">{{cfg.comp}}</dd></div>
+<div><dt style="font-size: 12px; color: #5E5B55; font-weight: 600">Medida final</dt><dd style="margin: 4px 0 0; font-size: 17px; font-weight: 700">{{cfg.size}}</dd></div>
+<div><dt style="font-size: 12px; color: #5E5B55; font-weight: 600">Ideal para</dt><dd style="margin: 4px 0 0; font-size: 15px; font-weight: 600">{{cfg.use}}</dd></div>
+<div><dt style="font-size: 12px; color: #5E5B55; font-weight: 600">Terminación</dt><dd style="margin: 4px 0 0; font-size: 15px; font-weight: 600">{{cfg.finish}}</dd></div>
+</dl>
+<a class="btn" data-t-href="{{waConfig}}" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: #161615; color: #F3F2EE; text-decoration: none; font-weight: 600; font-size: 16px; padding: 18px 28px; border-radius: 999px; min-height: 56px; text-align: center; width: 100%; box-sizing: border-box">Consultar este formato por WhatsApp</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DETALLES -->
+<section id="detalles" style="padding: 120px 0; background: #141413; color: #F3F2EE">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 56px">
+<div class="rv" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap">
+<h2 style="margin: 0; font-size: clamp(36px, 4.8vw, 72px); font-weight: 800; letter-spacing: -0.05em; line-height: 1"><span style="color: #D8C6AA">Pensada</span> al detalle.</h2>
+<span style="font-size: 18px; font-weight: 600; color: #D8C6AA">04 / Detalles</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 14px">
+<div class="rv" style="background: #D8C6AA; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 28px; min-height: 300px; border: 1px solid #3A3935; justify-content: space-between; border-color: #D8C6AA; color: #141413"><span style="font-size: 12px; font-weight: 600; color: #141413; display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.14em; text-transform: uppercase">Módulo<span style="font-size: 12px; letter-spacing: 0.08em; color: #5C5646">01</span></span><svg class="ig" viewBox="0 0 240 84" aria-hidden="true" fill="none" stroke="#141413" stroke-width="2" stroke-linecap="round"><g class="mA"><rect x="48" y="4" width="66" height="66" rx="2"></rect><path d="M64 4C60 26 60 48 64 70M86 4C90 26 90 48 86 70M48 24C70 20 92 20 114 24M48 48C70 52 92 52 114 48"></path></g><g class="mB"><rect x="126" y="4" width="66" height="66" rx="2"></rect><path d="M154 4C150 26 150 48 154 70M176 4C180 26 180 48 176 70M126 24C148 20 170 20 192 24M126 48C148 52 170 52 192 48"></path></g><path class="dr" pathLength="1" d="M48 80H192" stroke-width="1.5"></path></svg><span style="font-size: 52px; font-weight: 800; letter-spacing: -0.05em; line-height: 1"><span class="cnt" data-to="90">90</span> × <span class="cnt" data-to="90">90</span><span style="font-size: 22px"> cm</span></span><span style="font-size: 15px; line-height: 1.55; color: #2A2823; border-top: 1px solid #3A3935; padding-top: 18px; border-top-color: #141413">Dos módulos, A y B. Cada uno funciona solo o combinado.</span></div>
+<div class="rv" style="background: transparent; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 28px; min-height: 300px; border: 1px solid #3A3935; justify-content: space-between"><span style="font-size: 12px; font-weight: 600; color: #D8C6AA; display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.14em; text-transform: uppercase">Formato cuádruple<span style="font-size: 12px; letter-spacing: 0.08em; color: #8B877E">02</span></span><svg class="ig" viewBox="0 0 240 84" aria-hidden="true" fill="none" stroke="#D8C6AA" stroke-width="2" stroke-linecap="round"><g class="q q1"><rect x="86" y="6" width="32" height="32" rx="1.5"></rect><path d="M106 6C102 18 102 28 108 38M86 24C98 21 110 21 118 26"></path></g><g class="q q2"><rect x="120" y="6" width="32" height="32" rx="1.5"></rect><path d="M132 6C136 18 136 28 130 38M120 26C130 21 142 21 152 24"></path></g><g class="q q3"><rect x="86" y="40" width="32" height="32" rx="1.5"></rect><path d="M108 40C102 50 102 60 106 72M86 54C98 57 110 57 118 52"></path></g><g class="q q4"><rect x="120" y="40" width="32" height="32" rx="1.5"></rect><path d="M130 40C136 50 136 60 132 72M120 52C130 57 142 57 152 54"></path></g></svg><span style="font-size: 52px; font-weight: 800; letter-spacing: -0.05em; line-height: 1"><span class="cnt" data-to="181.2" data-dec="1">181,2</span><span style="font-size: 22px"> cm</span></span><span style="font-size: 15px; line-height: 1.55; color: #B9B5AC; border-top: 1px solid #3A3935; padding-top: 18px">De lado, con una luz sugerida de 1,2 cm entre módulos.</span></div>
+<div class="rv" style="background: transparent; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 28px; min-height: 300px; border: 1px solid #3A3935; justify-content: space-between"><span style="font-size: 12px; font-weight: 600; color: #D8C6AA; display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.14em; text-transform: uppercase">Altura sugerida<span style="font-size: 12px; letter-spacing: 0.08em; color: #8B877E">03</span></span><svg class="ig" viewBox="0 0 240 84" aria-hidden="true" fill="none" stroke="#D8C6AA" stroke-width="2" stroke-linecap="round"><path d="M40 80H200" stroke-width="1.5" opacity="0.6"></path><g class="lift"><rect x="70" y="10" width="76" height="40" rx="2"></rect><path d="M88 10C84 22 84 38 88 50M108 10C112 22 112 38 108 50M128 10C124 22 124 38 128 50"></path></g><path class="bar" d="M164 52V79M158 52H170M158 79H170" stroke-width="1.5"></path><text class="fadeT" x="176" y="70" fill="#D8C6AA" stroke="none" font-size="12" font-weight="700" font-family="Manrope, sans-serif">32 cm</text></svg><span style="font-size: 52px; font-weight: 800; letter-spacing: -0.05em; line-height: 1"><span class="cnt" data-to="32">32</span><span style="font-size: 22px"> cm</span></span><span style="font-size: 15px; line-height: 1.55; color: #B9B5AC; border-top: 1px solid #3A3935; padding-top: 18px">Desde el piso hasta la base del formato cuádruple.</span></div>
+<div class="rv" style="background: transparent; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 28px; min-height: 300px; border: 1px solid #3A3935; justify-content: space-between"><span style="font-size: 12px; font-weight: 600; color: #D8C6AA; display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.14em; text-transform: uppercase">Material<span style="font-size: 12px; letter-spacing: 0.08em; color: #8B877E">04</span></span><svg class="ig" viewBox="0 0 240 84" aria-hidden="true" fill="none" stroke="#D8C6AA" stroke-width="2" stroke-linecap="round"><rect class="lyT" x="50" y="24" width="140" height="6" rx="1" fill="#D8C6AA" stroke="none"></rect><rect x="50" y="32" width="140" height="20" rx="1"></rect><path d="M60 52L72 32M76 52L88 32M92 52L104 32M108 52L120 32M124 52L136 32M140 52L152 32M156 52L168 32M172 52L184 32" stroke-width="1" opacity="0.55"></path><rect class="lyB" x="50" y="54" width="140" height="6" rx="1" fill="#D8C6AA" stroke="none"></rect></svg><span style="font-size: 30px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.1">Melamina sobre MDF, 12 mm</span><span style="font-size: 15px; line-height: 1.55; color: #B9B5AC; border-top: 1px solid #3A3935; padding-top: 18px">Color ceniza. Alta resistencia y fácil mantenimiento.</span></div>
+<div class="rv" style="background: #D8C6AA; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 28px; min-height: 300px; border: 1px solid #3A3935; justify-content: space-between; border-color: #D8C6AA; color: #141413"><span style="font-size: 12px; font-weight: 600; color: #141413; display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.14em; text-transform: uppercase">Tapa extra<span style="font-size: 12px; letter-spacing: 0.08em; color: #5C5646">05</span></span><svg class="ig" viewBox="0 0 240 84" aria-hidden="true" fill="none" stroke="#141413" stroke-width="2" stroke-linecap="round"><rect class="slab" x="62" y="18" width="96" height="9" rx="2" fill="#D5C1AA" stroke-width="1.5"></rect><g><rect x="66" y="32" width="88" height="46" rx="2"></rect><path d="M84 32C80 44 80 66 84 78M110 32C114 44 114 66 110 78M136 32C132 44 132 66 136 78M66 54C88 50 132 50 154 54"></path></g><circle class="dot" cx="190" cy="34" r="6" fill="#D5C1AA" stroke-width="1.2"></circle><circle class="dot dot2" cx="190" cy="52" r="6" fill="#A8774E" stroke-width="1.2"></circle><circle class="dot dot3" cx="190" cy="70" r="6" fill="#DEC69E" stroke-width="1.2"></circle></svg><span style="font-size: 30px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.1">Madera enchapada laqueada</span><span style="font-size: 15px; line-height: 1.55; color: #2A2823; border-top: 1px solid #3A3935; padding-top: 18px; border-top-color: #141413">Kiri, paraíso o guatambú, para los formatos doble superior e inferior.</span></div>
+<div class="rv" style="background: transparent; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 28px; min-height: 300px; border: 1px solid #3A3935; justify-content: space-between"><span style="font-size: 12px; font-weight: 600; color: #D8C6AA; display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.14em; text-transform: uppercase">Profundidad<span style="font-size: 12px; letter-spacing: 0.08em; color: #8B877E">06</span></span><svg class="ig" viewBox="0 0 240 84" aria-hidden="true" fill="none" stroke="#D8C6AA" stroke-width="2" stroke-linecap="round"><path d="M60 4V80" stroke-width="1.5" opacity="0.5"></path><rect x="60" y="14" width="30" height="56" rx="1"></rect><path class="dr" pathLength="1" d="M90 14C138 20 150 32 150 42C150 52 138 64 90 70"></path><path class="grow" d="M60 80H150M60 76V84M150 76V84" stroke-width="1.5"></path><text class="fadeT" x="158" y="46" fill="#D8C6AA" stroke="none" font-size="12" font-weight="700" font-family="Manrope, sans-serif">40 cm</text></svg><span style="font-size: 52px; font-weight: 800; letter-spacing: -0.05em; line-height: 1"><span class="cnt" data-to="14.4" data-dec="1">14,4</span> → <span class="cnt" data-to="40">40</span><span style="font-size: 22px"> cm</span></span><span style="font-size: 15px; line-height: 1.55; color: #B9B5AC; border-top: 1px solid #3A3935; padding-top: 18px">Del marco a la parte más saliente de la curva.</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 14px">
+<figure class="rv" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="border-radius: 6px; overflow: hidden; aspect-ratio: 4 / 3; background: #F4F3EF"><img src="assets/C1-cuadruple.jpg" alt="iblioteka formato cuádruple, vacía, colgada en una pared blanca" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<figcaption style="display: flex; justify-content: space-between; gap: 12px; font-size: 14px; padding-top: 12px; border-top: 1px solid #3A3935"><span style="font-weight: 700; color: #F3F2EE">Cuádruple · 2A + 2B</span><span style="color: #B9B5AC">181,2 × 181,2 cm</span></figcaption>
+</figure>
+<figure class="rv" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="border-radius: 6px; overflow: hidden; aspect-ratio: 4 / 3; background: #F4F3EF"><img src="assets/C2-doble-superior.jpg" alt="iblioteka formato doble superior colgada sobre un escritorio de roble" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<figcaption style="display: flex; justify-content: space-between; gap: 12px; font-size: 14px; padding-top: 12px; border-top: 1px solid #3A3935"><span style="font-weight: 700; color: #F3F2EE">Doble superior · 1A + 1B</span><span style="color: #B9B5AC">181,2 × 90 cm</span></figcaption>
+</figure>
+</div>
+<div class="rv" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-top: 24px">
+<h3 style="margin: 0; font-size: clamp(28px, 3.2vw, 44px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.05">Tres maderas para <span style="color: #D8C6AA">la tapa</span>.</h3>
+<p style="margin: 0; max-width: 380px; font-size: 15px; line-height: 1.55; color: #B9B5AC">Madera enchapada laqueada, opcional para los formatos doble superior y doble inferior.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 14px">
+<figure class="rv" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="border-radius: 6px; overflow: hidden; aspect-ratio: 5 / 2; background: #F4F3EF" class="wd"><img src="assets/C3-kiri.jpg" alt="Doble superior con tapa de madera de kiri" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 4%; display: block"></div>
+<figcaption style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; padding-top: 12px; border-top: 1px solid #3A3935"><span style="width: 18px; height: 18px; border-radius: 50%; background: #D5C1AA; flex: none"></span>Kiri<span style="margin-left: auto; font-size: 13px; font-weight: 500; color: #B9B5AC">Claro, casi blanco</span></figcaption>
+</figure>
+<figure class="rv" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="border-radius: 6px; overflow: hidden; aspect-ratio: 5 / 2; background: #F4F3EF" class="wd"><img src="assets/C4-paraiso.jpg" alt="Doble superior con tapa de madera de paraíso" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 4%; display: block"></div>
+<figcaption style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; padding-top: 12px; border-top: 1px solid #3A3935"><span style="width: 18px; height: 18px; border-radius: 50%; background: #A8774E; flex: none"></span>Paraíso<span style="margin-left: auto; font-size: 13px; font-weight: 500; color: #B9B5AC">Cálido, con veta</span></figcaption>
+</figure>
+<figure class="rv" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="border-radius: 6px; overflow: hidden; aspect-ratio: 5 / 2; background: #F4F3EF" class="wd"><img src="assets/C5-guatambu.jpg" alt="Doble superior con tapa de madera de guatambú" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 4%; display: block"></div>
+<figcaption style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; padding-top: 12px; border-top: 1px solid #3A3935"><span style="width: 18px; height: 18px; border-radius: 50%; background: #DEC69E; flex: none"></span>Guatambú<span style="margin-left: auto; font-size: 13px; font-weight: 500; color: #B9B5AC">Crema amarillenta</span></figcaption>
+</figure>
+<style>#k503 .wd{position:relative}#k503 .wd::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,244,220,.6),transparent);transform:skewX(-20deg);pointer-events:none}</style><style>#k503 figure:hover .wd::after{left:140%;transition:left 1s cubic-bezier(.2,.7,.2,1)}#k503 figure:hover figcaption>span:first-child{animation:wdglow 1.2s ease-out}@keyframes wdglow{0%{box-shadow:0 0 0 0 rgba(216,198,170,.8)}100%{box-shadow:0 0 0 14px rgba(216,198,170,0)}}</style></div>
+</div>
+</section>
+
+<!-- LA CAJA -->
+
+
+<!-- SHOWROOM / ESTUDIO -->
+<section id="caja" style="padding: 120px 0; background: #D8C6AA; height: 1075px">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div class="rv" style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #3B342A">05 / La caja</p>
+<h2 style="margin: 0; font-size: clamp(36px, 4.6vw, 68px); font-weight: 800; letter-spacing: -0.05em; line-height: 1; color: #141413">Llega en su propia caja de madera.</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2A2620; max-width: 520px">Cada módulo viene prolijamente acomodado y protegido en una caja de madera de 93,5 × 65 cm, diseñada para el traslado y pensada para reutilizarse después.</p>
+<p style="margin: 0 0 -12px 0; align-self: flex-start; font-size: 14px; font-weight: 700; letter-spacing: 0.02em; color: #141413">Materiales incluidos en la caja</p><div style="display: flex; flex-wrap: wrap; gap: 8px; max-width: 540px">
+<span style="background: #141413; color: #F3F2EE; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; font-family: 'Space Grotesk', 'Manrope', system-ui, sans-serif; letter-spacing: 0.02em; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; cursor: default; animation: pillIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s both" style-hover="transform: translateY(-4px) rotate(-2deg); background: #F3F2EE; color: #141413">Piezas</span>
+<span style="background: #141413; color: #F3F2EE; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; font-family: 'Space Grotesk', 'Manrope', system-ui, sans-serif; letter-spacing: 0.02em; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; cursor: default; animation: pillIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.07s both" style-hover="transform: translateY(-4px) rotate(-2deg); background: #F3F2EE; color: #141413">Perchas</span>
+<span style="background: #141413; color: #F3F2EE; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; font-family: 'Space Grotesk', 'Manrope', system-ui, sans-serif; letter-spacing: 0.02em; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; cursor: default; animation: pillIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.14s both" style-hover="transform: translateY(-4px) rotate(-2deg); background: #F3F2EE; color: #141413">Regla</span>
+<span style="background: #141413; color: #F3F2EE; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; font-family: 'Space Grotesk', 'Manrope', system-ui, sans-serif; letter-spacing: 0.02em; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; cursor: default; animation: pillIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.21000000000000002s both" style-hover="transform: translateY(-4px) rotate(-2deg); background: #F3F2EE; color: #141413">Bulones</span>
+<span style="background: #141413; color: #F3F2EE; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; font-family: 'Space Grotesk', 'Manrope', system-ui, sans-serif; letter-spacing: 0.02em; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; cursor: default; animation: pillIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.28s both" style-hover="transform: translateY(-4px) rotate(-2deg); background: #F3F2EE; color: #141413">Tornillos</span>
+<span style="background: #141413; color: #F3F2EE; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; font-family: 'Space Grotesk', 'Manrope', system-ui, sans-serif; letter-spacing: 0.02em; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; cursor: default; animation: pillIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.35000000000000003s both" style-hover="transform: translateY(-4px) rotate(-2deg); background: #F3F2EE; color: #141413">Tarugos</span>
+<span style="background: #141413; color: #F3F2EE; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; font-family: 'Space Grotesk', 'Manrope', system-ui, sans-serif; letter-spacing: 0.02em; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; cursor: default; animation: pillIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.42000000000000004s both" style-hover="transform: translateY(-4px) rotate(-2deg); background: #F3F2EE; color: #141413">Tapitas</span>
+<span style="background: #141413; color: #F3F2EE; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; font-family: 'Space Grotesk', 'Manrope', system-ui, sans-serif; letter-spacing: 0.02em; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; cursor: default; animation: pillIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.49000000000000005s both" style-hover="transform: translateY(-4px) rotate(-2deg); background: #F3F2EE; color: #141413">Elástico</span>
+<helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&amp;display=swap"></helmet><style>@keyframes pillIn { 0% { opacity: 0; transform: translateY(14px) scale(0.85); } 60% { opacity: 1; transform: translateY(-3px) scale(1.04); } 100% { opacity: 1; transform: translateY(0) scale(1); } }</style></div>
+</div>
+<div style="flex: 1.2 1 480px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<div class="rv" style="grid-column: span 2; border-radius: 26px; overflow: hidden; background: #FFFFFF"><img src="assets/caja.jpg" alt="Caja de madera de la iblioteka con su gráfica de círculos negros" style="width: 100%; height: 360px; object-fit: contain; display: block"></div>
+<div class="rv" style="border-radius: 22px; overflow: hidden; height: 240px"><img src="assets/cajas-accesorios.jpg" alt="Cajas de accesorios con tapitas, elástico y herrajes" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<div class="rv" style="border-radius: 22px; overflow: hidden; height: 240px"><img src="assets/ambiente-pasillo.jpg" alt="La caja colgada en la pared como un cuadro, junto a la iblioteka" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block"></div>
+</div>
+</div>
+</section><section id="showroom" style="padding: 120px 0; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 48px; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1">
+<div class="rv" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1">
+<h2 style="margin: 0; font-size: clamp(36px, 4.8vw, 72px); font-weight: 800; letter-spacing: -0.05em; line-height: 1; max-width: 900px; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1; -webkit-text-fill-color: #161615">Detrás de la iblioteka, <span style="color: #5C4128; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1; -webkit-text-fill-color: #5C4128; background: none">IRIZAR KON</span>.</h2>
+<span style="font-size: 18px; font-weight: 600; color: #5C4128; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1">06 / Estudio</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1">
+<div class="rv" style="flex: 1.3 1 480px; position: relative; border-radius: 28px; overflow: hidden; min-height: 560px; background: #E6E4DE; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1">
+<img src="assets/ambiente-carmela.jpg" alt="iblioteka cuádruple junto al sillón Carmela en el showroom" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1">
+<div style="position: absolute; left: 20px; bottom: 20px; right: 20px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1">
+<span style="background: rgba(243,242,238,0.94); border-radius: 999px; padding: 10px 16px; font-size: 13px; font-weight: 600; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1">iblioteka + sillón Carmela</span>
+</div>
+</div>
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 24px; filter: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; opacity: 1">
+<div class="rv" style="background: #FFFFFF; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 18px; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; -webkit-backdrop-filter: none">
+<p style="margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #161615; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; -webkit-backdrop-filter: none">El estudio</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #161615; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; -webkit-backdrop-filter: none">[Texto breve sobre IRIZAR KON: quiénes son, cómo diseñan y qué otras piezas hacen.]</p>
+<a href="https://www.instagram.com/irizarkon/" target="_blank" rel="noopener" style="font-weight: 700; font-size: 16px; color: #5C4128; text-decoration: none; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; -webkit-backdrop-filter: none">Ver más piezas en Instagram →</a>
+</div>
+<div style="background: #161615; color: #F3F2EE; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 18px; flex: 1 1 auto; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; -webkit-backdrop-filter: none; mix-blend-mode: normal; transform: none">
+<p style="margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #D8C6AA; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1">Showroom</p>
+<p style="margin: 0; font-size: clamp(26px, 2.6vw, 36px); font-weight: 800; letter-spacing: -0.04em; line-height: 1.1; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1">Vení a verla en persona.</p>
+<dl style="margin: 0; display: flex; flex-direction: column; gap: 12px; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1">
+<div style="display: flex; gap: 16px; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1"><dt style="font-size: 14px; color: #CFCAC0; width: 90px; flex: none; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1">Dirección</dt><dd style="margin: 0; font-size: 15px; font-weight: 600; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1">[DIRECCIÓN DEL SHOWROOM]</dd></div>
+<div style="display: flex; gap: 16px; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1"><dt style="font-size: 14px; color: #CFCAC0; width: 90px; flex: none; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1">Horario</dt><dd style="margin: 0; font-size: 15px; font-weight: 600; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1">[DÍAS Y HORARIOS]</dd></div>
+</dl>
+<div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1">
+<a class="btn" data-t-href="{{waShowroom}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; background: #D8C6AA; color: #141413; text-decoration: none; font-weight: 700; font-size: 15px; padding: 15px 24px; border-radius: 999px; min-height: 48px; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1">Agendar visita</a>
+<a class="btn" href="[LINK GOOGLE MAPS]" style="display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid #F3F2EE; color: #F3F2EE; text-decoration: none; font-weight: 600; font-size: 15px; padding: 15px 24px; border-radius: 999px; min-height: 48px; filter: none; backdrop-filter: none; text-shadow: none; -webkit-backdrop-filter: none; opacity: 1">Cómo llegar</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PREGUNTAS -->
+<section id="preguntas" style="padding: 40px 0 120px; background: #F3F2EE; opacity: 1; filter: none">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 48px; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 18px; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; transform: none; mix-blend-mode: normal">
+<p style="margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #3A3833; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1">07 / Preguntas</p>
+<h2 style="margin: 0; font-size: clamp(36px, 4.4vw, 64px); font-weight: 800; letter-spacing: -0.05em; line-height: 1; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; color: #161615">Lo que siempre<br style="filter: none; backdrop-filter: none; text-shadow: none">nos preguntan.</h2>
+</div>
+<div style="flex: 1.6 1 520px; display: flex; flex-direction: column; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; transform: none">
+<details style="border-top: 1px solid #BDB8AE; padding: 24px 0; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; transform: none; mix-blend-mode: normal"><summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 700; letter-spacing: -0.02em; filter: none; backdrop-filter: none; text-shadow: none; color: #161615">¿Qué formatos puedo armar?<span class="pl" aria-hidden="true" style="font-size: 26px; font-weight: 400; line-height: 1; filter: none; backdrop-filter: none; text-shadow: none">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #2E2C29; max-width: 640px; filter: none; backdrop-filter: none; text-shadow: none">Combinando los módulos A y B: doble superior, doble inferior y doble vertical (1A + 1B), o cuádruple (2A + 2B).</p></details>
+<details style="border-top: 1px solid #BDB8AE; padding: 24px 0; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; transform: none; mix-blend-mode: normal"><summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 700; letter-spacing: -0.02em; filter: none; backdrop-filter: none; text-shadow: none; color: #161615">¿Cuánto mide?<span class="pl" aria-hidden="true" style="font-size: 26px; font-weight: 400; line-height: 1; filter: none; backdrop-filter: none; text-shadow: none">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #2E2C29; max-width: 640px; filter: none; backdrop-filter: none; text-shadow: none">Cada módulo mide 90 × 90 cm. El cuádruple llega a 181,2 × 181,2 cm, con 1,2 cm de luz entre módulos. Sugerimos colgarlo a 32 cm del piso.</p></details>
+<details style="border-top: 1px solid #BDB8AE; padding: 24px 0; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; transform: none; mix-blend-mode: normal"><summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 700; letter-spacing: -0.02em; filter: none; backdrop-filter: none; text-shadow: none; color: #161615">¿De qué material es?<span class="pl" aria-hidden="true" style="font-size: 26px; font-weight: 400; line-height: 1; filter: none; backdrop-filter: none; text-shadow: none">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #2E2C29; max-width: 640px; filter: none; backdrop-filter: none; text-shadow: none">Melamina sobre MDF de 12 mm, color ceniza: alta resistencia y fácil mantenimiento. Para los formatos doble superior e inferior hay una tapa opcional de madera enchapada laqueada en kiri, paraíso o guatambú.</p></details>
+<details style="border-top: 1px solid #BDB8AE; padding: 24px 0; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; transform: none; mix-blend-mode: normal"><summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 700; letter-spacing: -0.02em; filter: none; backdrop-filter: none; text-shadow: none; color: #161615">¿Viene armada?<span class="pl" aria-hidden="true" style="font-size: 26px; font-weight: 400; line-height: 1; filter: none; backdrop-filter: none; text-shadow: none">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #2E2C29; max-width: 640px; filter: none; backdrop-filter: none; text-shadow: none">Cada módulo llega en su caja de madera con todas las piezas, perchas y elementos para armarlo: regla, bulones, tornillos, tarugos, tapitas y elástico. [Agregar si ofrecen armado o instalación.]</p></details>
+<details style="border-top: 1px solid #BDB8AE; padding: 24px 0; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; transform: none; mix-blend-mode: normal"><summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 700; letter-spacing: -0.02em; filter: none; backdrop-filter: none; text-shadow: none; color: #161615">¿Puedo separar los módulos?<span class="pl" aria-hidden="true" style="font-size: 26px; font-weight: 400; line-height: 1; filter: none; backdrop-filter: none; text-shadow: none">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #2E2C29; max-width: 640px; filter: none; backdrop-filter: none; text-shadow: none">Sí. Cada módulo se puede ubicar por separado y combinar para armar la estructura que quieras.</p></details>
+<details style="border-top: 1px solid #BDB8AE; border-bottom: 1px solid #BDB8AE; padding: 24px 0; filter: none; backdrop-filter: none; text-shadow: none; opacity: 1; transform: none; mix-blend-mode: normal"><summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 700; letter-spacing: -0.02em; filter: none; backdrop-filter: none; text-shadow: none; color: #161615">¿Precio, envíos y plazos?<span class="pl" aria-hidden="true" style="font-size: 26px; font-weight: 400; line-height: 1; filter: none; backdrop-filter: none; text-shadow: none">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #2E2C29; max-width: 640px; filter: none; backdrop-filter: none; text-shadow: none">[Precio por formato, zonas de envío y tiempos de entrega.] Escribinos por WhatsApp y te respondemos con todo el detalle.</p></details>
+</div>
+</div>
+</section>
+
+<!-- CTA FINAL -->
+
+
+<!-- FOOTER -->
+<footer style="padding: 0px">
+<div style="max-width: none; margin: 0 auto; position: relative; overflow: hidden; border-radius: 36px 36px 0 0; background: #161615; color: #F3F2EE; padding: clamp(36px, 5vw, 64px) clamp(24px, 5vw, 64px) 32px; display: flex; flex-direction: column; gap: 8px; width: 100%; box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; position: relative; z-index: 1">
+<nav aria-label="Pie de página" style="display: flex; flex-direction: column; gap: 6px">
+<a class="fl" href="#inicio" style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em; padding: 6px 0">Inicio</a>
+<a class="fl" href="#concepto" style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em; padding: 6px 0">Concepto</a>
+<a class="fl" href="#configurador" style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em; padding: 6px 0">Configurador</a>
+<a class="fl" href="#showroom" style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em; padding: 6px 0">Showroom</a>
+<a class="fl" href="#preguntas" style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em; padding: 6px 0">Preguntas</a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-end; text-align: right">
+<a class="fl" href="mailto:info@irizarkon.com" style="font-size: 16px; font-weight: 500; padding: 4px 0; color: #D8C6AA">E-mail: info@irizarkon.com</a>
+<a class="fl" data-t-href="{{waGeneral}}" target="_blank" rel="noopener" style="font-size: 16px; font-weight: 500; padding: 4px 0; color: #D8C6AA">WhatsApp: [NÚMERO]</a>
+<span style="font-size: 16px; font-weight: 500; color: #CFCAC0">[DIRECCIÓN DEL SHOWROOM]</span>
+</div>
+</div>
+<p aria-hidden="true" class="fwm" style="margin: clamp(24px, 4vw, 56px) 0 0; font-size: clamp(64px, 15.2vw, 232px); font-weight: 800; letter-spacing: -0.065em; line-height: 0.85; text-align: center; white-space: nowrap; color: #D8C6AA">IRIZAR KON</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; position: relative; z-index: 1; margin-top: -8px">
+<a class="fb" href="https://www.instagram.com/irizarkon/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 12px 22px; border-radius: 999px; background: rgba(243,242,238,0.06); border: 1px solid rgba(216,198,170,0.55); color: #F3F2EE; text-decoration: none; font-size: 15px; font-weight: 600"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8"></circle></svg>Instagram</a>
+<a class="fb" data-t-href="{{waGeneral}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 12px 22px; border-radius: 999px; background: rgba(243,242,238,0.06); border: 1px solid rgba(216,198,170,0.55); color: #F3F2EE; text-decoration: none; font-size: 15px; font-weight: 600"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8.6 8.6 0 0 1-12.7 7.6L3.5 20.5l1.4-4.1a8.6 8.6 0 1 1 15.6-4.8z"></path></svg>WhatsApp</a>
+<a class="fb" href="mailto:info@irizarkon.com" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 12px 22px; border-radius: 999px; background: rgba(243,242,238,0.06); border: 1px solid rgba(216,198,170,0.55); color: #F3F2EE; text-decoration: none; font-size: 15px; font-weight: 600"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>E-mail</a>
+<a class="fb" href="[LINK GOOGLE MAPS]" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 12px 22px; border-radius: 999px; background: rgba(243,242,238,0.06); border: 1px solid rgba(216,198,170,0.55); color: #F3F2EE; text-decoration: none; font-size: 15px; font-weight: 600"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>Showroom</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(216,198,170,0.35); position: relative; z-index: 1">
+<span style="font-size: 13px; color: #CFCAC0">© IRIZAR KON · iblioteka</span>
+<span style="font-size: 13px; color: #CFCAC0">Estantería modular de diseño</span>
+</div>
+</div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a class="btn" data-t-href="{{waGeneral}}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" style="position: fixed; right: 24px; bottom: 24px; z-index: 30; width: 60px; height: 60px; border-radius: 50%; background: #161615; color: #F3F2EE; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.25)">
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8.6 8.6 0 0 1-12.7 7.6L3.5 20.5l1.4-4.1a8.6 8.6 0 1 1 15.6-4.8z"></path><path d="M9 9.2c.3 1.9 2 3.9 4.3 4.6l1-1.1 1.8.8-.4 1.6c-3.4.2-7-3.3-7-6.7l1.6-.4.8 1.8z"></path></svg>
+</a>
+
+</div>
+</div>
+<script>
+/* ====== CONFIGURACIÓN: número de WhatsApp (código de país + área + número, sin espacios) ====== */
+window.IBLIOTEKA = { whatsapp: '5490000000000', animate: true };
+</script>
+<script>
+/* Mini runtime: reemplaza al motor del canvas. Interpola {{valores}}, repeticiones y eventos. */
+var DC = (function () {
+  function get(scope, path) {
+    if (path === 'true') return true; if (path === 'false') return false;
+    return path.split('.').reduce(function (o, k) { return o == null ? undefined : o[k]; }, scope);
+  }
+  function whole(tpl) { var m = /^\{\{\s*([\w.$]+)\s*\}\}$/.exec(tpl); return m ? m[1] : null; }
+  function interp(tpl, scope) {
+    return tpl.replace(/\{\{\s*([\w.$]+)\s*\}\}/g, function (_, p) { var v = get(scope, p); return v == null ? '' : String(v); });
+  }
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;'); }
+  function DCLogic() { this.state = {}; this.props = Object.assign({}, window.IBLIOTEKA || {}); }
+  DCLogic.prototype.setState = function (p) {
+    Object.assign(this.state, typeof p === 'function' ? p(this.state) : p);
+    var self = this; if (!self._q) { self._q = true; Promise.resolve().then(function () { self._q = false; render(self); if (self.componentDidUpdate) self.componentDidUpdate(); }); }
+  };
+  DCLogic.prototype.forceUpdate = function () { render(this); };
+  var binds = [], texts = [], loops = [], evs = [];
+  function scan(root) {
+    // loops first
+    root.querySelectorAll('sc-for').forEach(function (el) {
+      if (el.closest('sc-for') !== el) return;
+      var box = document.createElement('div'); box.style.display = 'contents';
+      loops.push({ box: box, list: whole(el.getAttribute('data-t-list') || el.getAttribute('list') || ''), as: el.getAttribute('as'), tpl: el.innerHTML });
+      el.parentNode.replaceChild(box, el);
+    });
+    root.querySelectorAll('*').forEach(function (el) {
+      Array.prototype.slice.call(el.attributes).forEach(function (a) {
+        if (a.name.indexOf('data-t-') === 0) binds.push({ el: el, name: a.name.slice(7), tpl: a.value, last: undefined });
+        if (a.name.indexOf('data-on-') === 0) evs.push({ el: el, type: a.name.slice(8), path: a.value });
+      });
+    });
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), n;
+    while ((n = w.nextNode())) if (n.nodeValue.indexOf('{{') >= 0) texts.push({ node: n, tpl: n.nodeValue, last: undefined });
+  }
+  function setAttr(el, name, tpl, scope, rec) {
+    var p = whole(tpl), v = p ? get(scope, p) : interp(tpl, scope);
+    if (rec && rec.last === v) return; if (rec) rec.last = v;
+    if (typeof v === 'boolean' && (name === 'disabled' || name === 'checked')) { el[name] = v; if (v) el.setAttribute(name, ''); else el.removeAttribute(name); return; }
+    if (name === 'class') name = 'class';
+    el.setAttribute(name, v == null ? '' : String(v));
+  }
+  function loopHTML(L, vals) {
+    var list = get(vals, L.list) || [], out = [];
+    list.forEach(function (item, i) {
+      var sc = Object.create(vals); sc[L.as] = item; sc.$index = i;
+      var h = L.tpl.replace(/<sc-if[^>]*value="\{\{\s*([\w.$]+)\s*\}\}"[^>]*>([\s\S]*?)<\/sc-if>/g, function (_, p, inner) { return get(sc, p) ? inner : ''; });
+      h = h.replace(/data-t-([\w-]+)="([^"]*)"/g, function (_, name, tpl) {
+        var p = whole(tpl), v = p ? get(sc, p) : interp(tpl, sc);
+        if (typeof v === 'boolean') return v ? name : '';
+        return name + '="' + esc(v == null ? '' : v) + '"';
+      });
+      h = h.replace(/\{\{\s*([\w.$]+)\s*\}\}/g, function (_, p) { var v = get(sc, p); return v == null ? '' : esc(v); });
+      out.push('<div style="display:contents" data-i="' + i + '">' + h + '</div>');
+    });
+    return { html: out.join(''), list: list };
+  }
+  function render(comp) {
+    var vals = comp.renderVals();
+    binds.forEach(function (b) { setAttr(b.el, b.name, b.tpl, vals, b); });
+    texts.forEach(function (t) { var v = interp(t.tpl, vals); if (v !== t.last) { t.last = v; t.node.nodeValue = v; } });
+    evs.forEach(function (e) { var f = get(vals, e.path); e.el['on' + e.type] = typeof f === 'function' ? function (ev) { f(ev); } : null; });
+    loops.forEach(function (L) {
+      var r = loopHTML(L, vals);
+      if (r.html !== L.lastHTML) { L.box.innerHTML = r.html; L.lastHTML = r.html; }
+      L.box.querySelectorAll('[data-on-click],[data-on-change]').forEach(function (el) {
+        var wrap = el.closest('[data-i]'); var sc = Object.create(vals); sc[L.as] = r.list[+wrap.getAttribute('data-i')];
+        ['click', 'change'].forEach(function (t) { var p = el.getAttribute('data-on-' + t); if (p) { var f = get(sc, p); el['on' + t] = typeof f === 'function' ? function (ev) { f(ev); } : null; } });
+      });
+    });
+  }
+  function boot(Comp) {
+    var root = document.getElementById('app'); scan(root);
+    var c = new Comp(); render(c);
+    if (c.componentDidMount) c.componentDidMount();
+    window.__dc = c;
+  }
+  window.DCLogic = DCLogic;
+  return { boot: boot };
+})();
+
+/* ====== Lógica de la página ====== */
+class Component extends DCLogic {
+  componentDidMount() {
+    this.reduce = false;
+    try { this.reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    this.t0 = performance.now();
+    this.heroOn = true;
+    this.lastHeroKey = '';
+    const doc = document;
+    try {
+      if (!this.reduce && 'IntersectionObserver' in window) {
+        this.io = new IntersectionObserver((es) => {
+          es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); this.io.unobserve(e.target); } });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
+        const scan = () => doc.querySelectorAll('.rv:not(.in):not([data-obs])').forEach((el) => { el.setAttribute('data-obs', '1'); this.io.observe(el); });
+        scan();
+        this.scanTimer = setInterval(scan, 900);
+        this.arm = () => doc.documentElement.classList.add('rv-ready');
+        window.addEventListener('scroll', this.arm, { once: true, passive: true });
+      }
+    } catch (e) {}
+    try {
+      if (!this.reduce && 'IntersectionObserver' in window) {
+        this.cio = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { this.countUp(e.target); this.cio.unobserve(e.target); } }), { threshold: 0.6 });
+        const scanC = () => doc.querySelectorAll('.cnt:not([data-cobs])').forEach((el) => { el.setAttribute('data-cobs', '1'); this.cio.observe(el); });
+        scanC();
+        this.cTimer = setInterval(scanC, 1200);
+      }
+    } catch (e) {}
+    const loop = (now) => { try { this.tick(now); } catch (e) {} this.raf = requestAnimationFrame(loop); };
+    this.raf = requestAnimationFrame(loop);
+  }
+  componentDidUpdate() { this.kickTween(); }
+  componentWillUnmount() {
+    cancelAnimationFrame(this.raf);
+    clearInterval(this.scanTimer);
+    clearInterval(this.cTimer);
+    try { if (this.cio) this.cio.disconnect(); } catch (e) {}
+    try { window.removeEventListener('scroll', this.arm); } catch (e) {}
+    try { if (this.io) this.io.disconnect(); if (this.hio) this.hio.disconnect(); } catch (e) {}
+  }
+
+  countUp(el) {
+    const to = parseFloat(el.getAttribute('data-to')) || 0;
+    const dec = parseInt(el.getAttribute('data-dec') || '0', 10);
+    const t0 = performance.now(), dur = 1700;
+    const step = (now) => {
+      const p = Math.min(1, (now - t0) / dur);
+      const e = 1 - Math.pow(1 - p, 4);
+      el.textContent = (to * e).toFixed(dec).replace('.', ',');
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+  els() {
+    const doc = document;
+    if (!this.hSvg || !this.hSvg.isConnected) {
+      this.hSvg = doc.querySelector('svg[aria-label^="Animación de la iblioteka"]');
+      this.hG = this.hSvg ? Array.from(this.hSvg.querySelectorAll(':scope > g')).map((g) => ({ g, p: g.querySelectorAll('path') })) : null;
+      this.hL = doc.querySelector('.hl');
+      this.lastHeroKey = '';
+      if (this.hSvg && 'IntersectionObserver' in window) {
+        try { if (this.hio) this.hio.disconnect(); this.hio = new IntersectionObserver((es) => { this.heroOn = es[es.length - 1].isIntersecting; }); this.hio.observe(this.hSvg); } catch (e) {}
+      }
+    }
+    if (!this.cSvg || !this.cSvg.isConnected) {
+      this.cSvg = doc.querySelector('svg[aria-label^="Ilustración de la iblioteka"]');
+      this.cG = this.cSvg ? Array.from(this.cSvg.querySelectorAll(':scope > g[transform]')).map((g) => ({ g, p: g.querySelectorAll('path') })) : null;
+    }
+  }
+  writeFr(list, fr) {
+    if (!list) return;
+    const d = (pts) => { let s = 'M'; for (let k = 0; k < pts.length; k++) { s += (k ? 'L' : '') + pts[k][0].toFixed(1) + ' ' + pts[k][1].toFixed(1); } return s; };
+    for (let i = 0; i < list.length && i < fr.length; i++) {
+      const m = fr[i], it = list[i];
+      it.g.setAttribute('transform', 'translate(' + m.x.toFixed(1) + ' ' + m.y.toFixed(1) + ')');
+      it.g.setAttribute('opacity', m.o.toFixed(3));
+      for (let j = 0; j < it.p.length && j < m.lines.length; j++) it.p[j].setAttribute('d', d(m.lines[j]));
+    }
+  }
+  setLabel(t) { if (this.hL && this.hL.textContent !== t) this.hL.textContent = t; }
+  tick(now) {
+    this.els();
+    if (this._pendFrom) this.kickTween();
+    const anim = (this.props.animate ?? true) && !this.reduce;
+    if (anim && this.heroOn && this.hG) {
+      const K = this.heroFrames();
+      const T = ((now - this.t0) / 1000) % 15;
+      const idx = Math.floor(T / 3), loc = T - idx * 3;
+      if (loc < 1.6) {
+        const key = 'h' + idx;
+        if (this.lastHeroKey !== key) { this.lastHeroKey = key; this.writeFr(this.hG, K[idx].f); this.setLabel(K[idx].label); }
+      } else {
+        const p = this.ease((loc - 1.6) / 1.4);
+        this.lastHeroKey = '';
+        this.writeFr(this.hG, this.lerpFrame(K[idx].f, K[(idx + 1) % 5].f, p));
+        this.setLabel(p < 0.5 ? K[idx].label : K[(idx + 1) % 5].label);
+      }
+    }
+    if (this.tw && this.cG) {
+      const p = Math.min(1, (now - this.tw.start) / 750);
+      const fr = p >= 1 ? this.tw.to : this.lerpFrame(this.tw.from, this.tw.to, this.ease(p));
+      this.writeFr(this.cG, fr);
+      this._cfgCur = fr;
+      if (p >= 1) this.tw = null;
+    }
+  }
+  kickTween() {
+    if (!this._pendFrom || !this._cfgCache || this._cfgCache.key === this._pendKey) return;
+    const from = this._pendFrom, to = this._cfgCache.fr;
+    this._pendFrom = null;
+    const anim = (this.props.animate ?? true) && !this.reduce;
+    if (!anim) { this._cfgCur = to; return; }
+    this.els();
+    this.tw = { from, to, start: performance.now() };
+    this.writeFr(this.cG, from);
+  }
+
+  disp(field, u, v, X, Y, box) {
+    const S = 300;
+    const nx = (X - (box.x + box.w / 2)) / (box.w / 2);
+    const ny = (Y - (box.y + box.h / 2)) / (box.h / 2);
+    const su = Math.sin(Math.PI * u), sv = Math.sin(Math.PI * v);
+    if (field === 'lens') return [0.26 * S * su * nx * (1 - 0.55 * ny * ny), 0.26 * S * sv * ny * (1 - 0.55 * nx * nx)];
+    if (field === 'wave') return [0.16 * S * su * Math.sin(Math.PI * ny), 0.1 * S * sv * Math.sin(Math.PI * nx)];
+    return [0, 0];
+  }
+  moduleLines(type, flipV, px, py, box, field) {
+    const S = 300, N = 14;
+    const uA = [0.17, 0.38, 0.64], vT = [0.12, 0.33, 0.58, 0.82];
+    const us = type === 'A' ? uA : uA.map((u) => 1 - u).reverse();
+    const vs = flipV ? vT.map((v) => 1 - v).reverse() : vT;
+    const lines = [];
+    us.forEach((u) => { const pts = []; for (let k = 0; k <= N; k++) { const v = k / N; const d = this.disp(field, u, v, px + u * S, py + v * S, box); pts.push([u * S + d[0], v * S + d[1]]); } lines.push(pts); });
+    vs.forEach((v) => { const pts = []; for (let k = 0; k <= N; k++) { const u = k / N; const d = this.disp(field, u, v, px + u * S, py + v * S, box); pts.push([u * S + d[0], v * S + d[1]]); } lines.push(pts); });
+    return lines;
+  }
+  frame(layout, field) {
+    const MODS = [['A', false], ['B', false], ['B', true], ['A', true]];
+    return MODS.map((m, i) => ({ x: layout.pos[i][0], y: layout.pos[i][1], o: layout.op[i], lines: this.moduleLines(m[0], m[1], layout.pos[i][0], layout.pos[i][1], layout.box, field) }));
+  }
+  lerpFrame(a, b, p) {
+    const L = (x, y) => x + (y - x) * p;
+    return a.map((m, i) => ({ x: L(m.x, b[i].x), y: L(m.y, b[i].y), o: L(m.o, b[i].o), lines: m.lines.map((ln, j) => ln.map((pt, k) => [L(pt[0], b[i].lines[j][k][0]), L(pt[1], b[i].lines[j][k][1])])) }));
+  }
+  toOut(fr) {
+    const d = (pts) => 'M' + pts.map((p) => p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join('L');
+    const out = {};
+    fr.forEach((m, i) => {
+      const o = { t: 'translate(' + m.x.toFixed(1) + ' ' + m.y.toFixed(1) + ')', o: m.o.toFixed(3) };
+      m.lines.forEach((ln, j) => { o['l' + j] = d(ln); });
+      out['m' + i] = o;
+    });
+    return out;
+  }
+  ease(p) { return p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2; }
+
+  heroFrames() {
+    if (this._hk) return this._hk;
+    const LQ = { pos: [[0, 0], [306, 0], [0, 306], [306, 306]], op: [1, 1, 1, 1], box: { x: 0, y: 0, w: 612, h: 612 } };
+    const LH = { pos: [[0, 156], [306, 156], [0, 156], [306, 156]], op: [1, 1, 0, 0], box: { x: 0, y: 156, w: 612, h: 300 } };
+    const LV = { pos: [[156, 0], [156, 0], [156, 306], [156, 306]], op: [1, 0, 1, 0], box: { x: 156, y: 0, w: 300, h: 612 } };
+    this._hk = [
+      { f: this.frame(LQ, 'lens'), label: 'Cuádruple' },
+      { f: this.frame(LQ, 'wave'), label: 'Cuádruple' },
+      { f: this.frame(LH, 'lens'), label: 'Doble horizontal' },
+      { f: this.frame(LV, 'wave'), label: 'Doble vertical' },
+      { f: this.frame(LQ, 'flat'), label: 'Módulos A + B' }
+    ];
+    return this._hk;
+  }
+
+  cfgLayout(fmt, sep) {
+    const g = sep ? 70 : 4, cm = 10 / 3;
+    if (fmt === 'vertical') {
+      const x0 = (1500 - 300) / 2, y1 = 900 - 32 * cm, y0 = y1 - (600 + g);
+      return { pos: [[x0, y0], [x0, y0], [x0, y0 + 300 + g], [x0, y0 + 300 + g]], op: [1, 0, 1, 0], box: { x: x0, y: y0, w: 300, h: 600 + g }, w: 300, x0, y0, desk: false, top: false };
+    }
+    const w = 600 + g, x0 = (1500 - w) / 2;
+    if (fmt === 'cuadruple') {
+      const y1 = 900 - 32 * cm, y0 = y1 - (600 + g);
+      return { pos: [[x0, y0], [x0 + 300 + g, y0], [x0, y0 + 300 + g], [x0 + 300 + g, y0 + 300 + g]], op: [1, 1, 1, 1], box: { x: x0, y: y0, w, h: 600 + g }, w, x0, y0, desk: false, top: false };
+    }
+    const y1 = fmt === 'superior' ? 900 - 140 * cm : 900 - 22 * cm, y0 = y1 - 300;
+    return { pos: [[x0, y0], [x0 + 300 + g, y0], [x0, y0], [x0 + 300 + g, y0]], op: [1, 1, 0, 0], box: { x: x0, y: y0, w, h: 300 }, w, x0, y0, desk: fmt === 'superior', top: true };
+  }
+
+  renderVals() {
+    const st = this.state || {};
+
+    // HERO: first frame here; tick() animates it directly on the SVG
+    const K = this.heroFrames();
+    const heroFr = K[0].f, heroLabel = K[0].label;
+
+    // CONFIGURADOR
+    const fmt = st.fmt || 'cuadruple';
+    const sep = !!st.sep;
+    const wood = st.wood || 'none';
+    const wall = st.wall || 'blanco';
+    const FM = {
+      superior: { name: 'Doble superior', comp: '1A + 1B', size: '181,2 × 90 cm', use: 'Sobre escritorio o mesa' },
+      cuadruple: { name: 'Cuádruple', comp: '2A + 2B', size: '181,2 × 181,2 cm', use: 'Pared principal, living o estudio' },
+      vertical: { name: 'Doble vertical', comp: '1A + 1B', size: '90 × 181,2 cm', use: 'Rincones y paredes angostas' },
+      inferior: { name: 'Doble inferior', comp: '1A + 1B', size: '181,2 × 90 cm', use: 'Aparador o mueble bajo' }
+    };
+    const WD = { none: { name: 'Sin tapa', color: '#E9E7E2' }, kiri: { name: 'Kiri', color: '#D9C29C' }, paraiso: { name: 'Paraíso', color: '#A8744C' }, guatambu: { name: 'Guatambú', color: '#E4D3A6' } };
+    const WL = { blanco: { name: 'Blanco', color: '#F4F3EF', floor: '#DAD7D0', skirt: '#E6E4DE', line: '#8E8A82', cap: '#5E5B55' }, arena: { name: 'Arena', color: '#E7DCCB', floor: '#CFC4B2', skirt: '#DCCFBC', line: '#857A68', cap: '#5A5145' }, salvia: { name: 'Salvia', color: '#D3DACB', floor: '#BFC3B6', skirt: '#C6CDBD', line: '#717A68', cap: '#4B5345' }, grafito: { name: 'Grafito', color: '#3A3A37', floor: '#2A2A28', skirt: '#33332F', line: '#A9A59C', cap: '#CFCBC2' } };
+    const woodOk = fmt === 'superior' || fmt === 'inferior';
+    const topOn = woodOk && wood !== 'none';
+
+    const key = fmt + '|' + sep;
+    const L = this.cfgLayout(fmt, sep);
+    if (!this._cfgCache || this._cfgCache.key !== key) this._cfgCache = { key, fr: this.frame(L, 'lens') };
+    const cfgFr = this._cfgCache.fr;
+    if (!this.tw) this._cfgCur = cfgFr;
+    const goCfg = (patch) => { this._pendFrom = this._cfgCur || cfgFr; this._pendKey = this._cfgCache.key; this.setState(patch); };
+
+    const dx0 = L.x0 - 70, dx1 = L.x0 + L.w + 70, dy = 900 - 75 * (10 / 3);
+    const desk = 'M' + dx0 + ' ' + dy + 'H' + dx1 + 'M' + (dx0 + 30) + ' ' + dy + 'V892M' + (dx1 - 30) + ' ' + dy + 'V892';
+    const W = WL[wall];
+    const cfg = Object.assign({}, this.toOut(cfgFr), {
+      wall: W.color, floor: W.floor, skirt: W.skirt, line: W.line, capColor: W.cap,
+      deskO: L.desk ? 1 : 0, desk,
+      top: { x: L.x0 - 10, y: L.y0 - 20, w: L.w + 20, fill: WD[topOn ? wood : 'none'].color, o: topOn ? 1 : 0 },
+      name: FM[fmt].name, comp: FM[fmt].comp, size: FM[fmt].size, use: FM[fmt].use,
+      finish: 'Ceniza' + (topOn ? ' + tapa ' + WD[wood].name.toLowerCase() : ''),
+      aria: 'Ilustración de la iblioteka formato ' + FM[fmt].name + ' sobre una pared ' + W.name.toLowerCase()
+    });
+
+    const formats = ['superior', 'cuadruple', 'vertical', 'inferior'].map((k) => ({ name: FM[k].name, comp: FM[k].comp, on: k === fmt, off: k !== fmt, pick: () => goCfg({ fmt: k }) }));
+    const woods = ['none', 'kiri', 'paraiso', 'guatambu'].map((k) => {
+      const sel = woodOk ? wood === k : k === 'none';
+      return { name: WD[k].name, color: WD[k].color, pressed: sel ? 'true' : 'false', dis: !woodOk && k !== 'none', op: !woodOk && k !== 'none' ? 0.4 : 1, border: sel ? '#161615' : '#D6D3CC', pick: () => this.setState({ wood: k }) };
+    });
+    const walls = ['blanco', 'arena', 'salvia', 'grafito'].map((k) => ({ name: WL[k].name, color: WL[k].color, pressed: wall === k ? 'true' : 'false', ring: wall === k ? '0 0 0 3px #FFFFFF, 0 0 0 5px #161615' : 'none', pick: () => this.setState({ wall: k }) }));
+
+    // GALERIA
+    const PH = [
+      { src: 'assets/G1-living.jpg', alt: 'iblioteka cuádruple en un living luminoso, sobre un sofá de bouclé y una mesa de travertino', label: 'Living · Cuádruple', pos: 'center 40%' },
+      { src: 'assets/G2-escritorio.jpg', alt: 'iblioteka doble superior sobre un escritorio de roble, con carpetas kraft y libros', label: 'Estudio · Doble superior', pos: 'center 40%' },
+      { src: 'assets/G3-recibidor.jpg', alt: 'iblioteka doble inferior con tapa de madera curva, como aparador en un recibidor', label: 'Recibidor · Doble inferior', pos: 'center 55%' },
+      { src: 'assets/G4-lectura.jpg', alt: 'iblioteka doble vertical junto a un sillón de cuero en un rincón de lectura', label: 'Lectura · Doble vertical', pos: 'center 45%' },
+      { src: 'assets/G5-comedor.jpg', alt: 'iblioteka cuádruple con cerámicas de terracota en un comedor, con luz de tarde y una mesa redonda de roble', label: 'Comedor · Cuádruple', pos: 'center 40%' },
+      { src: 'assets/G6-separados.jpg', alt: 'Tres módulos de iblioteka colgados por separado en diagonal sobre una pared blanca, con un banco de roble debajo', label: 'Módulos separados', pos: 'center 45%' },
+      { src: 'assets/ambiente-pasillo.jpg', alt: 'Showroom con varios formatos de iblioteka: cuádruple, doble inferior como aparador y doble vertical', label: 'Showroom · Varios formatos', pos: 'center 55%' },
+      { src: 'assets/quad-libros.jpg', alt: 'iblioteka cuádruple con libros y objetos', label: 'Cuádruple con libros', pos: 'center 40%' }
+    ];
+    const pages = Math.ceil(PH.length / 2);
+    const gp = (st.gi || 0) % pages;
+    const gi = gp * 2;
+    const nextI = ((gp + 1) % pages) * 2;
+
+    // WHATSAPP
+    const num = String(this.props.whatsapp ?? '5490000000000').replace(/\D/g, '');
+    const wa = (msg) => 'https://wa.me/' + num + '?text=' + encodeURIComponent(msg);
+    const cfgMsg = '¡Hola! Quiero consultar por la iblioteka formato ' + FM[fmt].name + (topOn ? ' con tapa de ' + WD[wood].name.toLowerCase() : '') + '.';
+
+    return {
+      h: this.toOut(heroFr), heroLabel,
+      cfg, formats, woods, walls, wallName: W.name, sep,
+      woodNote: woodOk ? 'Madera enchapada laqueada, opcional para este formato.' : 'La tapa de madera está disponible para los formatos doble superior y doble inferior.',
+      toggleSep: () => goCfg({ sep: !sep }),
+      photo: PH[gi], photo2: PH[(gi + 1) % PH.length], photoCount: (gp + 1) + ' / ' + pages, nextThumb: PH[nextI].src,
+      nextPhoto: () => { const c = ((this.state || {}).gi || 0) % pages; this.setState({ gi: (c + 1) % pages }); },
+      prevPhoto: () => { const c = ((this.state || {}).gi || 0) % pages; this.setState({ gi: (c - 1 + pages) % pages }); },
+      waGeneral: wa('¡Hola! Vi la web de la iblioteka y quiero hacer una consulta.'),
+      waConfig: wa(cfgMsg),
+      waShowroom: wa('¡Hola! Quiero agendar una visita al showroom para ver la iblioteka.')
+    };
+  }
+}
+/* ====== Arranque ====== */
+DC.boot(Component);
+</script>
+</body>
+</html>
